@@ -1,0 +1,25 @@
+<div class="container">
+  <h2>Chat messages admin <%= link_to "Add chat message", chatadmin_add_chatmessage_path, :class => 'btn btn-success btn-sm'%></h1>
+  <p><%=@count%> chat messages.</p>            
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Author</th>
+        <th style="width:50%;">Message</th>
+	<th>Operations</th>
+      </tr>
+    </thead>
+    <tbody>
+     <% for @message in @chatmessages do%>
+      <tr>
+        <th><%= @message.id%></th>
+        <th><%= @message.author%></th>
+        <th style="width:50%;"><%= @message.message%></th>
+	<th><%= link_to "Edit", chatadmin_edit_chatmessage_path(@message.id), :class => 'btn btn-primary btn-sm'%>&nbsp;<%= link_to "Delete", chatadmin_delete_chatmessage_path(@message.id), :class => 'btn btn-danger btn-sm'%></th>
+      </tr>
+     <% end %>
+    </tbody>
+  </table>
+</div>
+</br></br>

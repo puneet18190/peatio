@@ -1,0 +1,13 @@
+<div class="post-img post-block mb40">
+  <img src="/assets/newsimages/<%=rand(5)+1%>.jpg" class="img-responsive" style="width: 750px;height: 410px;">
+</div>
+<div class="bg-white">
+<h1><%=@story.title%></h1>
+<p class="meta"><span class="meta-date"><%=@story.published_first_at%></span><span class="meta-author">By<a href="#" class="meta-link"> <%=@story.author_id%></a></span></p>
+<div style="width:60%;"><%=@story.body_raw.gsub("</br>","</br></br>").html_safe %></div>
+</br>
+<div class="clear"></div>
+</br>
+<%= link_to "All news", news_path(1) %> </br>
+</br>
+</div>

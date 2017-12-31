@@ -1,0 +1,54 @@
+<div class="container">
+<div class="row">
+
+    <div class="col-md-12">    
+        <div class="wrapper-content bg-white pinside20">
+            <div class="row">
+            <p class="lead">News</p>
+              <%for @article in @articles do%>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="post-block mb30">
+                        <div class="post-img">
+                            <a href="<%=story_path(@article.id)%>" class="imghover"><img src="/assets/newsimages/2.jpg" class="img-responsive" style="width:358px;height:250px;"></a>
+                        </div>
+			<div class="clear"></div>
+                        <div class="bg-white pinside20 outline">
+                            <h2><a href="<%=story_path(@article.id)%>" class="title"><%=@article.title%></a></h2>
+                            <p class="meta"><span class="meta-date"><%= @article.published_first_at.to_time.strftime('%b %e, %G')%></span><span class="meta-author">By<a href="#">&nbsp;Author <%=@article.author_id%></a></span></p>
+                            <p><%= @article.body_raw.to_s[0..30] %></p>
+                            <a href="<%=story_path(@article.id)%>" class="btn-link" target="_new">Read More</a> </div>
+                    </div>
+                </div>
+               <% end %>
+                <div class="col-md-12 text-center col-sm-12 col-xs-12">
+                    <div class="st-pagination">
+                        <!--st-pagination-->
+                        <ul class="pagination">
+  			    <li><a href="<%=news_path(1)%>" aria-label="previous" ><span aria-hidden="true">First</span></a></li>
+			    <% if @previous_page > 1 then %>
+                            <li><a href="<%=news_path(@previous_page)%>" aria-label="previous" ><span aria-hidden="true">Previous</span></a></li>
+			    <% end %>
+                            <li class="active"><a href="<%=news_path(@page)%>"><%=@page%></a></li>
+		            <% if @next_page < @last_page then %>
+                              <li><a href="<%=news_path(@next_page)%>"><%=@next_page%></a></li>
+			    <% end %>
+			    <% if @next_page + 1 < @last_page then %>
+                              <li><a href="<%=news_path(Newsarticle.get_next_page(@next_page))%>"><%=Newsarticle.get_next_page(@next_page)%></a></li>
+			    <% end %>
+			    <% if @next_page < @last_page then %>
+                            <li> <a href="<%=news_path(@next_page)%>" aria-label="Next"><span aria-hidden="true">Next</span></a></li>
+			    <% end %>
+			     <li><a href="<%=news_path(@last_page)%>" aria-label="previous" ><span aria-hidden="true">Last</span></a></li>
+                        </ul>
+                    </div>
+                    <!--/.st-pagination-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+    
+  
+

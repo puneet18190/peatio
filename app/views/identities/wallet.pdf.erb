@@ -1,0 +1,21 @@
+<% @data.each_with_index do |c| %>
+	<table>
+		<tr><td><b><%= c[0] %></b></td></tr>
+		<tr>
+			<td><%= "Public Key: #{c[1]}" %></td>
+			<td><%= "Private Key: #{c[2]}" %></td>
+		</tr>
+
+		<tr>
+			<td><b><span style="color: green">SHARE</span></b></td>
+			<td><b><span style="color: red">SECRET</span></b></td>
+		</tr>
+		<tr>
+			<% q1= RQRCode::QRCode.new(c[1],:size => 10).to_img.resize(200, 200).to_data_url %>
+			<% q2= RQRCode::QRCode.new(c[2],:size => 10).to_img.resize(200, 200).to_data_url %>
+			<td><%= image_tag(q1, :height=> "150",:width=>"150") %></td>
+			<td><%= image_tag(q2, :height=> "150",:width=>"150") %></td>
+		</tr>
+	</table>
+	<hr>
+<% end %>	

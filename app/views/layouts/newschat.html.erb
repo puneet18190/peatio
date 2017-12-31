@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>News chat admin</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">Safewex</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li id="li_newsadmin"><%= link_to "News admin", newsadmin_all_path(1) %></li>
+      <li id="li_chatadmin"><%= link_to "Chat admin", chatadmin_all_path(1) %></li>
+    </ul>
+   </div>
+  </nav>
+    <% if flash[:success] %> 
+       <div class="container col-sm-4" style="margin-left:10px;">
+	<div class="alert alert-success"><%= flash[:success] %></div>
+       </div>
+       <div class="clear"></div>
+      <% end %>
+     <% if flash[:error] then %>
+       </br>
+       <div class="container col-sm-4" style="margin-left:10px;">
+        <div class="alert alert-danger">
+          <% @errors = flash[:error].split(".") %>
+          <% for @error in @errors do %>
+            <%= @error %>. </br>
+          <% end %>
+        </div>
+       </div>
+      <% end %>    
+    <%= flash[:notice] %>
+    <div class="clear"></div>
+  
+    <%= yield %>
+  <script>
+      $(".navbar-nav>li").removeClass("active");
+      var path = window.location.pathname;
+      if(path.indexOf("newsadmin") >= 0){$("#li_newsadmin").addClass("active");}
+      if(path.indexOf("chatadmin") >= 0){$("#li_chatadmin").addClass("active");}      
+     </script>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+- id: 1
+  key: renminbi
+  code: cny
+  symbol: "¥"
+  coin: false
+  precision: 2
+  assets:
+    accounts:
+      -
+        bank: '招商银行'
+        address: '6225 0885 6022 3501'
+        password: '111111'
+        tel: '95555'
+- id: 2
+  key: satoshi
+  code: btc
+  symbol: "฿"
+  coin: true
+  quick_withdraw_max: 0
+  rpc: http://bitcoinrpc:5gKAgrJv8CQr2CGUhjVbBFLSj29HnE6YGXvfykHJzS3A@127.0.0.1:8332
+  blockchain: https://blockchain.info/tx/#{txid}
+  address_url: https://blockchain.info/address/#{address}
+  assets:
+    accounts:
+      -
+        address: 1HjfnJpQmANtuW7yr1ggeDfyfe1kDK7rm3
+
+- id: 3
+  key: litecoin
+  code: ltc
+  symbol: "L"
+  coin: true
+  rpc: http://bitcoinrpc:5gKAgrJv8CQr2CGUhjVbBFLSj29HnE6YGXvfykHJzS3A@127.0.0.1:9432
+  blockchain: https://live.blockcypher.com/ltc/tx/#{txid}
+  address_url: https://live.blockcypher.com/ltc/address/#{address}
+  assets:
+    accounts:
+      -
+        address: LWvu8FiDHBk7bwBEtYFo5yDveWXJjHGJbj‏
+
+- id: 5
+  key: dogecoin
+  code: doge
+  symbol: "DO"
+  coin: true
+  rpc: http://bitcoinrpc:5gKAgrJv8CQr2CGUhjVbBFLSj29HnE6YGXvfykHJzS3A@127.0.0.1:22555
+  blockchain: https://live.blockcypher.com/ltc/tx/#{txid}
+  address_url: https://live.blockcypher.com/ltc/address/#{address}
+  assets:
+    accounts:
+      -
+        address: LWvu8FiDHBk7bwBEtYFo5yDveWXJjHGJbj‏    
+
+- id: 6
+  key: dash
+  code: dash
+  symbol: "DA"
+  coin: true
+  rpc: http://bitcoinrpc:5gKAgrJv8CQr2CGUhjVbBFLSj29HnE6YGXvfykHJzS3A@127.0.0.1:9998
+  blockchain: https://chainz.cryptoid.info/dash/tx.dws?#{txid}.htm
+  address_url: https://live.blockcypher.com/ltc/address/#{address}
+  assets:
+    accounts:
+      -
+        address: LWvu8FiDHBk7bwBEtYFo5yDveWXJjHGJbj‏  
+- id: 7
+  key: riecoin
+  code: ric
+  symbol: "RIC"
+  coin: true
+  rpc: http://bitcoinrpc:5gKAgrJv8CQr2CGUhjVbBFLSj29HnE6YGXvfykHJzS3A@127.0.0.1:8400
+  blockchain: https://live.blockcypher.com/ltc/tx/#{txid}
+  address_url: https://live.blockcypher.com/ltc/address/#{address}
+  assets:
+    accounts:
+      -
+        address: LWvu8FiDHBk7bwBEtYFo5yDveWXJjHGJbj‏ 
+- id: 8
+  key: peercoin
+  code: ppc
+  symbol: "PPC"
+  coin: true
+  rpc: http://bitcoinrpc:5gKAgrJv8CQr2CGUhjVbBFLSj29HnE6YGXvfykHJzS3A@127.0.0.1:8401
+  blockchain: https://chainz.cryptoid.info/dash/tx.dws?#{txid}.htm
+  address_url: https://live.blockcypher.com/ltc/address/#{address}
+  assets:
+    accounts:
+      -
+        address: LWvu8FiDHBk7bwBEtYFo5yDveWXJjHGJbj‏ 
+- id: 9
+  key: primecoin
+  code: xpm
+  symbol: "XPM"
+  coin: true
+  rpc: http://bitcoinrpc:5gKAgrJv8CQr2CGUhjVbBFLSj29HnE6YGXvfykHJzS3A@127.0.0.1:8402
+  blockchain: https://chainz.cryptoid.info/dash/tx.dws?#{txid}.htm
+  address_url: https://live.blockcypher.com/ltc/address/#{address}
+  assets:
+    accounts:
+      -
+        address: LWvu8FiDHBk7bwBEtYFo5yDveWXJjHGJbj‏ 
+- id: 10
+  key: florincoin
+  code: flo
+  symbol: "FLO"
+  coin: true
+  rpc: http://bitcoinrpc:5gKAgrJv8CQr2CGUhjVbBFLSj29HnE6YGXvfykHJzS3A@127.0.0.1:8403
+  blockchain: https://florincoin.info/address/#{txid}
+  address_url: https://live.blockcypher.com/ltc/address/#{address}
+  assets:
+    accounts:
+      -
+        address: LWvu8FiDHBk7bwBEtYFo5yDveWXJjHGJbj‏           
+
+  

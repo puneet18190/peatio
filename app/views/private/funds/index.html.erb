@@ -1,0 +1,57 @@
+
+<div class="container" >
+<div class="row section-space20">
+    <h2>BALANCES, DEPOSITS & WITHDRAWALS</h2>
+</div>
+</div>
+
+
+<div class="container">
+
+  
+            <!-- /.section title start-->
+       
+
+       
+    </div>
+
+</div>
+</div>
+
+
+
+
+<div style="margin-bottom:100px">
+<div class="panel-body panel-currencies container">
+
+    <div class='row'>
+        <div class='col-md-4'>
+
+            <div class="currencies-container">
+                <accounts></accounts>
+            </div>
+        </div>
+
+        <div class='col-md-8'>
+            <div class="details-container">
+                <!-- {{template 'flash'}} -->
+                <ui-view></ui-view>
+            </div>
+        </div>
+
+    </div>
+    <!-- .row -->
+
+</div>
+</div>
+
+<% content_for :scripts do %>
+<script type="text/javascript" charset="utf-8">
+    $(window).load(function() {
+        $.ajax({
+            type: "post",
+            url: "<%= gen_address_funds_path %>"
+        })
+    });
+</script>
+<% end %>

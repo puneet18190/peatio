@@ -1,0 +1,165 @@
+- id: btccny
+  code: 3
+  #name: BTC/CNY      # default name
+  base_unit: btc
+  quote_unit: cny
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: cny, fixed: 2}
+  ask: {fee: 0, currency: btc, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true
+- id: ltccny
+  code: 6
+  coin: Litecoin
+  name: LTC/CNY     
+  base_unit: ltc
+  quote_unit: cny
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: cny, fixed: 2}
+  ask: {fee: 0, currency: ltc, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true
+- id: ltcbtc
+  code: 7
+  coin: :Litecoin 
+  name: LTC/BTC      
+  base_unit: ltc
+  quote_unit: btc
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: btc, fixed: 4}
+  ask: {fee: 0, currency: ltc, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true
+- id: dogecny
+  code: 8
+  coin: Dogecoin
+  name: DOGE/CNY     
+  base_unit: doge
+  quote_unit: cny
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: cny, fixed: 2}
+  ask: {fee: 0, currency: doge, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true
+- id: dogebtc
+  code: 9
+  coin: Dogecoin
+  name: DOGE/BTC      
+  base_unit: doge
+  quote_unit: btc
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: btc, fixed: 4}
+  ask: {fee: 0, currency: doge, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true
+- id: dashcny
+  code: 10
+  coin: Dash
+  name: DASH/CNY     
+  base_unit: dash
+  quote_unit: cny
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: cny, fixed: 2}
+  ask: {fee: 0, currency: dash, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true
+- id: dashbtc
+  code: 11
+  coin: Dash
+  name: DASH/BTC      
+  base_unit: dash
+  quote_unit: btc
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: dash, fixed: 4}
+  ask: {fee: 0, currency: doge, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true
+- id: riccny
+  code: 12
+  coin: Riecoin
+  name: RIC/CNY     
+  base_unit: ric
+  quote_unit: cny
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: cny, fixed: 2}
+  ask: {fee: 0, currency: ric, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true
+- id: ricbtc
+  code: 13
+  coin: Riecoin
+  name: RIC/BTC      
+  base_unit: ric
+  quote_unit: btc
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: btc, fixed: 4}
+  ask: {fee: 0, currency: ric, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true  
+- id: ppccny
+  code: 14
+  coin: Peercoin
+  name: PPC/CNY     
+  base_unit: ppc
+  quote_unit: cny
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: cny, fixed: 2}
+  ask: {fee: 0, currency: ppc, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true
+- id: ppcbtc
+  code: 15
+  coin: Peercoin
+  name: PPC/BTC      
+  base_unit: ppc
+  quote_unit: btc
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: btc, fixed: 4}
+  ask: {fee: 0, currency: ppc, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true  
+- id: xpmcny
+  code: 16
+  coin: Primecoin
+  name: XPM/CNY     
+  base_unit: xpm
+  quote_unit: cny
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: cny, fixed: 2}
+  ask: {fee: 0, currency: xpm, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true
+- id: xpmbtc
+  code: 17
+  coin: Primecoin
+  name: XPM/BTC      
+  base_unit: xpm
+  quote_unit: btc
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: btc, fixed: 4}
+  ask: {fee: 0, currency: xpm, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true 
+- id: flocny
+  code: 18
+  coin: Florincoin
+  name: FLO/CNY     
+  base_unit: flo
+  quote_unit: cny
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: cny, fixed: 2}
+  ask: {fee: 0, currency: flo, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true
+- id: flobtc
+  code: 19
+  coin: Florincoin
+  name: FLO/BTC      
+  base_unit: flo
+  quote_unit: btc
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: btc, fixed: 4}
+  ask: {fee: 0, currency: flo, fixed: 4}
+  sort_order: 1
+  #visible: false     # default to true 
+  

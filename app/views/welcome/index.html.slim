@@ -1,0 +1,223 @@
+
+
+       
+ 
+
+doctype html
+html lang="en" 
+  body.animsition
+    #searchbar.collapse.searchbar
+      .search-area
+        .container
+          .row
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+              .input-group
+                input.form-control placeholder=("Search for...") type="text" /
+                span.input-group-btn
+                  button.btn.btn-default type="button"  Go!
+              /! /input-group
+            /! /.col-lg-6
+    .top-bar
+      /! top-bar
+      .container
+        .row
+          .col-md-7.hidden-xs.hidden-sm
+            .top-nav
+              span.top-text-left.hidden-xs.homeExchange
+                a href="/markets/ltcbtc"  Exchange
+              span.top-text-left.hidden-xs.homeHeaders.coming-soon
+                a href=""  Margin
+              span.top-text-left.hidden-xs.homeHeaders.coming-soon
+                a href=""  Lending
+          .col-md-5.col-sm-12.text-right.col-xs-12
+          #getstart.row
+           - unless current_user
+            .top-nav.top-nav-right
+              span.top-text.hidden-xs.homeExchange
+                a href="/registration1" Register
+              span.top-text.hidden-xs.homeExchange
+                a href="/auth/login" Login
+           - else  
+             .top-nav.top-nav-right style="position:relative;top:-5px"
+              span.top-text.homeHeaders style="padding-left:0;"
+                div style="float:left"
+                 #navigation style="z-index:1000;margin-top:6px;padding-left:20px;" 
+                   /! navigation start
+                   ul
+                     li.active
+                       a href="/dashboard" style=("padding:0;color: #83bcfa;margin-right:17px;font-size: 20px;line-height: 1.6;font-weight:100;font-size:16px")  Dashboard
+                     li.active
+                       a href="/funds" style=("padding:0;color: #83bcfa;font-size: 20px;line-height: 1.6;font-weight:100;font-size:16px")  Wallets
+                       ul
+                         li style="border-bottom:none"
+                           a.animsition-link href="/wallets/mergewallets" style=("border-bottom:none;text-align:left;background: #15549a;color:#83bcfa") title=("Home page 1")  Transfer wallets
+                         li
+                           a.animsition-link href="/wallets/designedwallets" style=("border-bottom:none;text-align:left;background: #15549a;color:#83bcfa;font-size:13px;") title=("Home page 1")  Design paper wallets
+              span.top-text.homeHeaders
+                a href="/history/orders" style="font-size:16px"  History
+              span.top-text.hidden-xs.homeHeaders
+                a href="/tickets" style="font-size:16px"  Tickets
+              span.top-text.hidden-xs.homeHeaders.signout-link
+                a href="/signout" 
+    /! /.top-bar
+    .header
+      .container
+        .row
+          .col-md-2.col-sm-12.col-xs-6
+            /! logo
+            .logo
+                img alt=("logo") src='/assets/home/logo.png' style="margin-top:10px" /
+          /! logo
+          .col-md-9.col-sm-12.col-xs-12
+            #navigation
+              /! navigation start
+              ul
+                li.active
+                  a.animsition-link href="/news"  bitcoin news
+                  ul
+                    li
+                      a.animsition-link href="/coins" title=("Home page 1")  List of cryptocurrencies
+                    
+                li
+                  a.animsition-link href="/chat"  Community
+                  ul
+                    li
+                      a.animsition-link href="/chat" title=("Blog Listing")  Chat
+                li
+                  a.animsition-link href="/calculators"  Calculators
+                li
+                  a.animsition-link href="/developers"  Developers
+                  ul
+                    li
+                      a.animsition-link href="/blog-listing.html" title=("Blog Listing")  Api
+                li
+                  a.animsition-link href="/articles/safewex"  Help
+                  ul
+                    li
+                      a.animsition-link href="/articles/safewex" title=("Blog Listing")  How it works
+                    li
+                      a.animsition-link href="/articles/protect_yourself" title=("Blog Listing")  How to protect yourself from lost
+                    li
+                      a.animsition-link href="/articles/bitcoin_wallet" title=("Blog Listing")  Bitcoin wallet
+                    li
+                      a.animsition-link href="/articles/Hardware_wallets" title=("Blog Listing")  Hardware wallets
+                    li
+                      a.animsition-link href="/" title=("Blog Listing")  Buy bitcoin
+                    li
+                      a.animsition-link href="/" title=("Blog Listing")  Deposit and Withdraw
+                    li
+                      a.animsition-link href="/" title=("Blog Listing") How to trade all currencies
+                  
+               
+            /! /.navigation start
+          .col-md-1.hidden-sm
+            /! search start
+            .search-nav
+              a.search-btn aria-expanded="false" data-toggle="collapse" href="#searchbar" role="button" 
+                i.fa.fa-search
+          /! /.search start
+    #slider.slider
+      /! slider
+      .slider-img
+        img alt=("Borrow - Loan Company Website Template") src='#{image_path 'slider-1.jpg'}' /
+        .container
+          .row
+            .col-lg-6.col-md-12.col-sm-12.col-xs-12
+              .slider-captions
+                /! slider-captions
+                h1.slider-title THE BLOCKCHAIN TRADING INTERFACE  
+                h2.slider-title style="font-size:27px;line-height:35px"  The safest trading place for buying and selling digital currencies
+                p.slider-text.hidden-xs
+                  a.strong.text-highlight href="/articles/safewex" style="font-size: 25px; text-decoration: underline;" Read more
+                a.btn.btn-default.hidden-xs href="/registration1"  Get Started
+              /! /.slider-captions
+    
+   
+.hp
+  .section-space80.bg-white
+    .container
+      .row
+        .col-lg-12.col-md-12.col-sm-12.col-xs-12
+          .section-title.mb60.text-center
+            /! section title start
+            h2 Benefits of Safewex
+          /! /.section title start
+      .row
+        .col-lg-4.col-sm-4.text-center.col-md-4.col-xs-12
+          .feature.mb40
+            img alt="" src="assets/home/img-1.png" /
+            .feature-content
+              h3 safety
+              p
+                | 100% protextion againds hackers , system emphasizes the safety of your money, and allows you to connect in the most secure way (hardware wallets)
+        .col-lg-4.col-sm-4.text-center.col-md-4.col-xs-12
+          .feature.mb40
+            img alt="" src="assets/home/img-2.png" /
+            .feature-content
+              h3 Confidentiality
+              p
+                | the system does not retain personal data about the customer (and private keys of Bitcoin)
+        
+        .col-lg-4.col-sm-4.text-center.col-md-4.col-xs-12
+          .feature.mb40
+            img alt="" src="assets/home/img-5.png" /
+            .feature-content
+              h3 No restrictions
+              p
+                | |  no restrictions on withdrawals or deposits, actions are performed automatically without the need for intermediate certificates
+        .col-lg-4.col-sm-4.text-center.col-md-4.col-xs-12
+          .feature.mb40
+            img alt="" src="assets/home/img-4.png" /
+            .feature-content
+              h3 lower fees
+              p
+                | only basic fees. 
+        .col-lg-4.col-sm-4.col-md-5.text-center.col-xs-12
+          .feature.mb40
+            img alt="" src="assets/home/img-3.png" /
+            .feature-content
+              h3 Self management
+              p
+                | Save on your wallet, you are the sole manage 
+        .col-lg-4.col-sm-4.text-center.col-md-4.col-xs-12
+          .feature.mb40
+            img alt="" src="assets/home/img-6.png" /
+            .feature-content
+              h3 customer service
+              p  a response within 24 hours
+  .section-space80.exchange
+    .container
+      .row
+        .col-lg-12.col-md-12.col-sm-12.col-xs-12
+          .section-title.mb60.text-center
+            /! section title start
+            h2 style="color:#83bcfa !important" WE ARE NOT A BANK
+            p.lead We allow you to interact directly with the blockchain while remaining in full control of your keys & your funds
+            a href="/articles/safewex" style="font-size:40px;text-decoration:underline"  Read more
+          /! /.section title start
+  .features style="background-color:white"
+    .container88
+      .row
+        .col-lg-12.col-md-12.col-sm-12.col-xs-12 style="margin-bottom:40px;" 
+          .section-title.text-center
+            /! section title start
+            h2 style="font-size:48px !important" Choose the best one for you 
+            h2 style="padding-top:10px;margin-bottom:74px;font-size:37px !important;color:#c1c1c1 !important" to safetly storage the keys
+            img src="/assets/new_section.png"
+          /! /.section title start
+  #footer
+   .container
+   .row style="background-color: #778191;margin-bottom: 19px;color:white"
+     .col-lg-12.col-md-12.col-sm-12.col-xs-12
+       .section-title.text-center style="padding-top:20px"
+         /! section title start
+         h3 style="color:white !important"
+           | create wallets and start trading
+           br/
+           a href="/registration1"  now
+       /! /.section title start 
+        
+    
+             
+             
+           

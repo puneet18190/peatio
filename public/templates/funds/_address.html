@@ -1,0 +1,9 @@
+<div class="input-group col-sm-16">
+  <div class="input-group-addon" style="background-color:rgba(144, 161, 180, 0.2) ">
+    <span>     {{'funds.deposit_coin.address' | t}}    </span></div> <pre style="margin:0;padding:1px"><div class="form-control form-control-static" style="height:41px;" id="deposit_address">{{account.deposit_address}}  </div></pre><div class="input-group-addon" style="background-color: rgba(144, 161, 180, 0.2)" id="deposit_address_data">
+      <i class="fa fa-copy" style="background-color:rgba(144, 161, 180, 0.2) " data-clipboard-text="{{account.deposit_address}}"></i> 
+   </div>
+   <div class="input-group-addon" style="background-color: rgba(144, 161, 180, 0.2)"><span class="countdown hint" style="display:none;background-color: rgba(144, 161, 180, 0.2)">...</span>
+     <a id="new_address" ng-click="genAddress(deposit_channel.resource_name); $event.preventDefault()" href="#"> {{"funds.deposit_coin.new_address" | t}}</a>
+   </div>
+</div>

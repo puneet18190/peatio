@@ -1,0 +1,56 @@
+- id: 200
+  key: satoshi
+  currency: btc
+  sort_order: 1
+  min_confirm: 1
+  max_confirm: 3
+- id: 400
+  key: bank
+  currency: cny
+  sort_order: 2
+  bank_accounts:
+    -
+      bank: 'Your Bank Name'
+      branch: 'Your Bank Branch'
+      holder: 'Your Account Holder'
+      account: 'Your Account Number'
+- id: 600
+  key: ether
+  currency: eth
+  min_confirm: 1
+  max_confirm: 6
+- id: 800
+  key: litecoin
+  currency: ltc
+  min_confirm: 1
+  max_confirm: 6  
+- id: 1000
+  key: dogecoin
+  currency: doge
+  min_confirm: 1
+  max_confirm: 6
+- id: 12000
+  key: dash
+  currency: dash
+  min_confirm: 1
+  max_confirm: 6
+- id: 14000
+  key: riecoin
+  currency: ric
+  min_confirm: 1
+  max_confirm: 6
+- id: 16000
+  key: peercoin
+  currency: ppc
+  min_confirm: 1
+  max_confirm: 6
+- id: 18000
+  key: primecoin
+  currency: xpm
+  min_confirm: 1
+  max_confirm: 6
+- id: 20000
+  key: florincoin
+  currency: flo
+  min_confirm: 1
+  max_confirm: 6        

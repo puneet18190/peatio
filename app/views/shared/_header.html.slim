@@ -1,0 +1,117 @@
+
+
+doctype html
+html lang="en" 
+  body.animsition
+    #searchbar.collapse.searchbar
+      .search-area
+        .container
+          .row
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+              .input-group
+                input.form-control placeholder=("Search for...") type="text" /
+                span.input-group-btn
+                  button.btn.btn-default type="button"  Go!
+              /! /input-group
+            /! /.col-lg-6
+    .top-bar
+      /! top-bar
+      .container
+        .row
+          .col-md-7.hidden-xs.hidden-sm
+            .top-nav
+              span.top-text-left.hidden-xs.homeExchange
+                a href="/markets/ltcbtc"  Exchange
+              span.top-text-left.hidden-xs.homeHeaders.coming-soon
+                a href=""  Margin
+              span.top-text-left.hidden-xs.homeHeaders.coming-soon
+                a href=""  Lending
+          .col-md-5.col-sm-12.text-right.col-xs-12
+          #getstart.row
+           - unless current_user
+            .top-nav.top-nav-right
+              span.top-text.hidden-xs.homeExchange
+                a href="/registration1"   Register
+              span.top-text.hidden-xs.homeExchange
+                a href="/auth/login" Login
+           - else  
+             .top-nav.top-nav-right style="position:relative;top:-5px;"
+              span.top-text.homeHeaders style="padding-left:0;"
+                div style="float:left"
+                 #navigation style="z-index:1000;margin-top:3px;padding-left:20px;" 
+                   /! navigation start
+                   ul
+                     li.active
+                       a href="/dashboard" style=("position: relative;top: 3px;padding:0;color: #83bcfa;margin-right:17px;font-size: 20px;line-height: 1.6;font-weight:100;font-size:16px;position: relative;top: 3px;") Dashboard
+                     li.active
+                       a href="/funds" style=("position: relative;top: 3px;padding:0;color: #83bcfa;font-size: 20px;line-height: 1.6;font-weight:100;font-size:16px;position: relative;top: 3px;")  Wallets
+                       ul
+                         li style="border-bottom:none"
+                           a.animsition-link href="/wallets/mergewallets" style=("border-bottom:none;text-align:left;background: #15549a;color:#83bcfa") title=("Home page 1")  Transfer wallets
+                         li
+                           a.animsition-link href="/wallets/designedwallets" style=("border-bottom:none;text-align:left;background: #15549a;color:#83bcfa;font-size:13px;") title=("Home page 1")  Design paper wallets
+              span.top-text.homeHeaders
+                a href="/history/orders" style="font-size:16px"  History
+              span.top-text.hidden-xs.homeHeaders
+                a href="/tickets" style="font-size:16px"  Tickets
+              span.top-text.hidden-xs.homeHeaders.signout-link
+                a href="/signout"   
+    /! /.top-bar
+    .header.safewexHeader 
+      .container
+        .row
+          .col-md-2.col-sm-12.col-xs-6
+            /! logo
+            .logo
+              a href="/" 
+                img alt=("logo") src='/assets/home/logo.png' style="margin-top:9px" /
+          /! logo
+          .col-md-9.col-sm-12.col-xs-12
+            #navigation
+              /! navigation start
+              ul
+                li.active
+                  a.animsition-link href="/news"  bitcoin news
+                  ul
+                    li
+                      a.animsition-link href="/coins" title=("Learn about all coins")  List of cryptocurrencies
+                li
+                  a.animsition-link href="/chat"  Community
+                  ul
+                    li
+                      a.animsition-link href="/chat" title=("Blog Listing")  Chat
+                 
+                li
+                  a.animsition-link href="/calculators"  Calculators
+                li
+                  a.animsition-link href="/developers"  Developers
+                  ul
+                    li
+                      a.animsition-link href="/developers" title=("Blog Listing")  Api
+                li
+                  a.animsition-link href="/articles/safewex"  Help
+                  ul
+                    li
+                      a.animsition-link href="/articles/safewex" title=("Blog Listing")  SAFEWEX
+                    li
+                      a.animsition-link href="/articles/protect_yourself" title=("Blog Listing")  How to protect yourself from lost
+                    li
+                      a.animsition-link href="/articles/bitcoin_wallet" title=("Blog Listing")  Bitcoin wallet
+                    li
+                      a.animsition-link href="/articles/hardware_wallets" title=("Blog Listing")  Hardware wallets
+                    li
+                      a.animsition-link href="/" title=("Blog Listing")  Buy bitcoin
+                    li
+                      a.animsition-link href="/" title=("Blog Listing")  Deposit and Withdraw
+                    li
+                      a.animsition-link href="/" title=("Blog Listing") How to trade all currencies
+                
+               
+            /! /.navigation start
+          .col-md-1.hidden-sm
+            /! search start
+            .search-nav
+              a.search-btn aria-expanded="false" data-toggle="collapse" href="/#searchbar" role="button" 
+                i.fa.fa-search
+          /! /.search start
+  

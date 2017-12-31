@@ -1,0 +1,30 @@
+.row
+  .col-xs-12
+    .panel.panel-primary
+      .panel-heading
+        span = t('.withdraw', sn: @florincoin.id)
+      .panel-body
+        = description_for :withdraw do
+          = item_for @florincoin, :id
+          = item_for @florincoin, :created_at
+          = item_for @florincoin, :aasm_state_text
+          hr.split
+          = item_for @florincoin.member, :name
+          = item_for @florincoin, :fund_extra
+          = item_for @florincoin, :fund_uid do
+            span = @florincoin.fund_uid.truncate(22)
+          = item_for @florincoin, :amount
+          hr.split
+          = item_for @florincoin, :remark
+          hr.split
+          ul.list-inline.pull-right
+            - if @florincoin.may_reject?
+              li
+                = link_to t('.reject'), url_for([:admin, @florincoin]), class: 'btn btn-danger', method: 'DELETE', confirm: t('.reject_confirm')
+            - if @florincoin.may_process?
+              li
+                = link_to t('.process'), url_for([:admin, @florincoin]), class: 'btn btn-primary', method: 'PATCH'
+
+  .col-xs-12
+    = render partial: 'shared/admin/member', locals: {member: @florincoin.member}
+    = render partial: 'shared/admin/account', locals: {account: @florincoin.account}

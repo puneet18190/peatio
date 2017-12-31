@@ -1,0 +1,13 @@
+h4.bigHeader
+ | MY ORDERS  
+ .my_orders_links style="display:none;float:right;padding-right:14px"
+  = link_to t('.clear_bids_html'), clear_market_order_bids_path(market_id: current_market.id), remote: true, method: :post, data: {confirm: t('.confirm_clear_bids')}
+  = link_to t('.clear_asks_html'), clear_market_order_asks_path(market_id: current_market.id), remote: true, method: :post, data: {confirm: t('.confirm_clear_asks')}
+  = link_to t('.clear_all_html'),  clear_market_orders_path(market_id: current_market.id), remote: true, method: :post, data: {confirm: t('.confirm_clear_all')}
+#my_orders_wrapper
+  #my_orders.panel.panel-default
+    .panel-body.panel-body-content
+      .empty-row = t('.no_open_orders')
+      table.table.table-hover.my_orders_table 
+        tbody style="color: #3c4d6b;"
+    = render partial: 'mask' 

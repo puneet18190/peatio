@@ -1,0 +1,115 @@
+
+													<div class="animsition login">
+                                                    <!-- /.top-bar -->
+                                                    <div class="login-header">
+                                                        <div class="container">
+                                                        <% if flash[:error] then %>
+                                                        </br>
+                                                        <div class="container col-sm-12" style="margin-left:10px;">
+                                                         <div class="alert alert-danger">
+                                                           <% @errors = flash[:error].split(".") %>
+                                                           <% for @error in @errors do %>
+                                                             <%= @error %>. </br>
+                                                           <% end %>
+                                                         </div>
+                                                        </div>
+                                                       <% end %>    
+                                                     <%= flash[:notice] %>
+                                                            <div class="row">
+                                                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                                                    <!--  <div class="bg-white pinside30"><div class="row"><div class="col-md-5 col-sm-5 col-xs-12"><h1 class="page-title"><a href="/LoginMain.html" style="color:#3c4d6b"> Login</a></h1></div><div class="col-md-7 col-sm-7 col-xs-12"><div class="row"><div class="col-md-7 hidden-xs hidden-sm"><div class="rate-block"><small>Do you still have no Wallets of Safewex?</small></div></div><div class="col-md-5 col-sm-12 col-xs-12"><div class="btn-action"><%= link_to "Create wallets now", auth_signup_path, :class => 'btn btn-primary'%></div></div></div></div></div></div> -->
+                                                                    <div class="sub-nav" id="sub-nav">
+                                                                        <ul class="nav nav-justified">
+                                                                        <li><%= link_to "Json", login_json_path, :class => 'page-scroll' %></li>
+                                                                        <li class="active"><%= link_to "Public + Private Keys", login_private_and_public_key_path, :class => 'page-scroll' %></li>
+                                                                        <li ><%= link_to "Paper wallet", login_paper_wallet_path, :class => 'page-scroll' %></li>
+                                                                        <li ><%= link_to "Safewex usb", login_safewex_usb_path, :class => 'page-scroll' %></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class=" ">
+                                                        <!-- content start -->
+                                                        <div class="container keys">
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="wrapper-content bg-white">
+                                                                        <div class="section-scroll  login-content" id="section-feature" style="border: 2px solid #dee7f2 !important;border-top: none !important">
+                                                                            <div class="pinside60">
+                                                                                <div class="row">
+                                                                                    <div class="col-lg-12">
+                                                                                        <div>
+                                                                                            <div class="row">
+                                                                                                <div class="col-md-12">
+                                                                                                    <div class="bg-light pinside30 outline">
+                                                                                                        <h2  id="tbl_int_pge">Load wallet</h2>
+                                                                                                        <select class="wallet">
+                                                                                                            <option>btc</option>
+                                                                                                            <option>ltc</option>
+                                                                                                            <option>dash</option>
+                                                                                                            <option>doge</option>
+                                                                                                            <option>ppc</option>
+                                                                                                            <option>xpm</option>
+                                                                                                            <option>ric</option>
+                                                                                                            <option>flo</option>
+                                                                                                        </select>
+                                                                                                        <div class="" id="" role="tabpanel" aria-labelledby="headingOne">
+                                                                                                            <div class="panel-body">Public key: 
+                                                                                                                <input type="text" id="public_key"/>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="panel-body">Secret key: 
+                                                                                                            <input type="text" id="secret_key"/>
+                                                                                                        </div>
+                                                                                                        <button  class="btn btn-default btn-sm"> Add</button>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <%= form_tag('/auth/loginh') do %>    
+                                                                                            <div class="row main_container" style="max-height:500px;overflow-y:auto">
+                                                                                                
+                                                                                            </div>
+                                                                                            <div class="btn-action" style="margin-top:48px"><input class="btn btn-primary loginbtn" type="Submit" value="Login" ></div>
+                                                                                            <% end %>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                    <script type="text/javascript">
+                    var n=0
+                    $(".btn-sm").click(function(){
+                        var wallet = $(".wallet").find(":selected").text()
+                        var public_key = $("#public_key").val()
+                        var secret_key = $("#secret_key").val()
+                        var html_code = 
+                        '<div style="padding: 30px 0;width:99%;padding-left:32px;">'+
+                        '<div>'+
+                        '<span style="color:#3c4d6b;font-size:20px">'+wallet+'</span>'+
+                        '<input type="hidden" name="keys['+n+'][coin]" value="'+wallet+'">'+
+                        '<span style="float:right"><u><a onclick="$(this).parents().eq(3).remove()">Remove</a></u></span></div>'+
+                        '<div class="panel-body">Public key: <input type="text" value="'+public_key+'" name="keys['+n+'][public_key]"/></div>'+
+                        '<div class="panel-body">Secret key: <input type="text" value="'+secret_key+'" name="keys['+n+'][secret_key]"/></div>'+
+                        '<hr>'+
+                        '</div>'
+                        $(".main_container").append(html_code)
+                        n=n+1
+                    })
+                </script>

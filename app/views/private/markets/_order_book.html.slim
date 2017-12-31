@@ -1,0 +1,28 @@
+#order_book.panel.panel-default
+  .row
+    .col-md-6
+        h4 SELL ORDERS
+    .col-md-6
+        h4 BUY ORDERS
+  .panel-body.panel-body-head
+    #order_book_header.row
+      .col-md-6: table.table
+        thead: tr
+          th.price.col-md-4 
+           | Price
+          th.volume.col-xs-4 
+           =@market.base_unit.upcase
+          th.amount.col-xs-4 
+           =@market.quote_unit.upcase
+      .col-md-6: table.table.table-head
+        thead: tr          
+          th.price.col-md-4 Price
+          th.volume.col-md-4
+           =@market.base_unit.upcase 
+          th.amount.col-md-4 
+           =@market.quote_unit.upcase
+  .panel-body.panel-body-content
+    #order_book_body.row
+      .col-md-6: table.table.table-hover.asks style="background-color:white"
+      .col-md-6: table.table.table-hover.bids style="background-color:white"
+      

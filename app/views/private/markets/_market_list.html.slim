@@ -1,0 +1,87 @@
+#market_list_wrapper.has-right-dropdown
+  #market_list
+    .panel-default
+      .panel-body8
+        table.table
+          thead: tr
+            th.col-xs-6 style="height:34px;font-size:18px;color:black;border-bottom: 1px solid #83bcfa;"
+              span.name ALL MARKETS
+            th.col-md-6 style="border-bottom: 1px solid #83bcfa;color:gray;text-align:right;margin-top:2px"
+              span style="font-size:14px" Base coin :
+              select.form-control.input-sm style="margin-left:6px;width: 94px;float: right;position: relative;top: -4px;background-color: #c0c0c0;border-color:#c0c0c0"
+               option BTC
+               option USDT
+               option EUR
+               option LTC
+               option PPC  
+    .panel-default
+      .panel-body8
+        table.table.tableallmarkets
+          thead: tr
+            th.col-md-1
+              img src="/assets/starw.png"
+            th.col-md-3
+              span Coin
+            th.col-md-3 Price
+            th.col-md-3 Change  
+            th.col-md-2 Name     
+      .panel-body-content
+        table.table.table-hover.markets.all
+          tbody
+            - @markets.each do |market|
+              - if market.quote_unit == "btc"
+                tr.market id="market-list-#{market.id}" class="quote-#{market.quote_unit}" data-market=market.id
+                  td.col-md-1
+                    img src="/assets/starb.png"
+                  td.col-md-3.name
+                    = link_to market.coin, market_path(market)
+                  td.col-md-3.price
+                    = Global[market.id].ticker[:last]
+                  td.col-md-3.change
+                    | +0.00%
+                  td.col-md-2
+                    = market.base_unit.upcase
+              end 
+    .panel-default style="height:350px"
+      .panel-body8
+        table.table
+          thead: tr
+            th.col-xs-6 style="height:34px;font-size:18px;color:black;border-bottom: 1px solid #83bcfa;"
+              span.name NOTICES
+          tr
+           th
+            On Nov 21, 2017, the following will be added: Ethereum, Bitcoin Cash, and Strat
+          tr
+           th
+             On Nov 21, 2017, the following will be added: Ethereum, Bitcoin Cash, and Strat 
+          tr
+           th
+             On Nov 21, 2017, the following will be added: Ethereum, Bitcoin Cash, and Strat  
+          tr
+           th
+             On Nov 21, 2017, the following will be added: Ethereum, Bitcoin Cash, and Strat 
+          tr
+           th
+             On Nov 21, 2017, the following will be added: Ethereum, Bitcoin Cash, and Strat 
+    .panel-default style="height:350px"
+      .panel-body8
+        table.table
+          thead: tr
+            th.col-xs-6 style="height:34px;font-size:18px;color:black;border-bottom: 1px solid #83bcfa;"
+              span.name CHAT
+          tr
+           th
+            On Nov 21, 2017, the following will be delisted: SJCX, NOTE, and NAUT
+          tr
+           th
+            On Nov 21, 2017, the following will be delisted: SJCX, NOTE, and NAUT  
+          tr
+           th
+            On Nov 21, 2017, the following will be delisted: SJCX, NOTE, and NAUT  
+          tr
+           th
+            On Nov 21, 2017, the following will be delisted: SJCX, NOTE, and NAUT  
+          tr
+           th
+            On Nov 21, 2017, the following will be delisted: SJCX, NOTE, and NAUT  
+            

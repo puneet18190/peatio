@@ -1,0 +1,41 @@
+.container
+  .row
+    .col-md-12
+      .wrapper-content.bg-white.pinside40
+        .row style=("width: 806px; margin: auto;") 
+          h1 
+            a href="/wallet.pdf?data=#{@data}"  Download
+            |  and save the file!
+          table
+            - @data.each do |c|
+              tr
+                td style="padding-top: 20px;"
+                  b= c[0]
+              tr
+                - q1= RQRCode::QRCode.new(c[1],:size => 10).to_img.resize(200, 200).to_data_url
+                - q2= RQRCode::QRCode.new(c[2],:size => 10).to_img.resize(200, 200).to_data_url
+                td style="color: green;font-weight:bold;"
+                 = image_tag(q1, :height=> "250",:width=>"250")
+                 = "SHARE:"
+                td 
+                td style="color: red;position: relative;top: 17px;font-weight:bold"
+                 = "SECRET:" 
+                td style="position: relative;top: 14px;"
+                 = image_tag(q2, :height=> "250",:width=>"250")
+              tr style="border-bottom: 1px gray solid;"
+                td style="padding-bottom: 47px;"
+                 = "#{c[1]}" 
+                td
+                td 
+                td style="position: relative;top: 14px;"
+                 = "#{c[2]}" 
+                
+
+
+          .startTrading
+            h4
+              a href="/wallet.pdf?data=#{@data}"  Download 
+              | or
+              a.coming-soon href=""  print  
+              | the file
+            a.btn.btn-primary href="#" style="margin-top:25px"  Start trading now

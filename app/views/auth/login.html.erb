@@ -1,0 +1,116 @@
+    
+<div class="container">
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="bg-white pinside40">
+            <div class="row">
+                <div class="col-md-5 col-sm-5 col-xs-12">
+                    <h1 class="page-title">
+                    <a href="<>" style="color:#3c4d6b">Login
+                    </a>
+                </h1>
+                </div>
+                <div class="col-md-7 col-sm-7 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-7 hidden-xs hidden-sm">
+                            <div class="rate-block">
+                                <small>Do you still have no Wallets of Safewex?</small>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-12 col-xs-12">
+                            <div class="btn-action">
+                                <%=link_to "Create wallets now", registration1_path, :class=> 'btn btn-primary'%>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="container">
+<div class="row">
+    <div class="col-md-12">
+        <div class="wrapper-content bg-white loginMain">
+            <div class="section-scroll  login-content" id="section-feature">
+                <div class="pinside50" style="0">
+                    <h3>How would you like to access your wallet?</h3> 
+                    <div class="row loginOpt">
+                        <fieldset id="group1" style="float:left;float: left; width: 300px;padding: 5px;margin: 10px;font-size:20px">
+                       
+                        <%= link_to login_safewex_usb_path do%> <div>
+                        <input id="test3" name="radio-group" type="radio" value="json">
+                        <label for="test3"> Json </label>
+                        <img src="/assets/help.png" style="height:22px">
+                       
+                        </div> <% end %>
+
+                        <div>
+                        <a>
+                        <input id="test5" name="radio-group" type="radio" value="private_and_public_key">
+                        <label for="test5"> Privte key+Secret key </label>
+                        <img src="/assets/help.png" style="height:22px">
+                        </a>
+                        </div>
+
+                        <div>
+                        <input id="test2" name="radio-group" type="radio" value="paper_wallet">
+                        <label for="test2"> Paper wallet</label>
+                        <img src="/assets/help.png" style="height:22px">
+                        </div>
+
+                        <div>
+                            <input id="test1" name="radio-group" type="radio" value="safewex_usb">
+                            <label for="test1"> Safewex usb</label>
+                            <img src="/assets/help.png" style="height:22px">
+                            </div>
+
+                           
+                            
+                            <div>
+                            <input id="test4" name="radio-group" type="radio" value="signin">
+                            <label for="test4"> Maneged account</label>
+                            <img src="/assets/help.png" style="height:22px">
+                            </div>
+
+                            <div>
+                            <input class="coming-soon" disabled="disabled" id="test5" name="radio-group" type="radio" value="ledger">
+                            <label class="coming-soon" for="test5"> Ledger</label>
+                            <img src="/assets/help.png" style="height:22px">
+                            </div>
+
+                            <div>
+                            <input class="coming-soon" disabled="disabled" id="test6" name="radio-group" type="radio" value="trezor">
+                            <label class="coming-soon" for="test6"> Trezor</label>
+                            <img src="/assets/help.png" style="height:22px">
+                            </div>
+                        </fieldset>
+
+                        
+                    </div>
+                    <button  id="gobtn" class="btn btn-default btn-sm" style="margin-left: 10px;width: 113px;height: 37px;" type="submit" onclick="gethg()" >GO</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<script>
+
+function gethg(){
+    
+    if($('input[name=radio-group]:checked').val() == "signin")
+        {
+           
+        window.location = '/signin';
+        return;
+        
+    }
+    window.location.assign($('input[name=radio-group]:checked').val());
+}
+
+</script>

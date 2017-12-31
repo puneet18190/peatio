@@ -1,0 +1,27 @@
+<div class="container">
+  <h2>News articles admin <%= link_to "Add news story", newsadmin_add_story_path, :class => 'btn btn-success btn-sm'%></h1>
+  <p><%=@count%> news articles.</p>            
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Author ID</th>
+	<th>Status</th>
+	<th>Operations</th>
+      </tr>
+    </thead>
+    <tbody>
+     <% for @article in @newsarticles do%>
+      <tr>
+        <th><%= @article.id%></th>
+        <th><%= @article.title%></th>
+        <th><%= @article.author_id%></th>
+	<th><%= @article.status%></th>
+	<th><%= link_to "Show", story_path(@article.id), :class => 'btn btn-warning btn-sm', :target => '_new'%>&nbsp;<%= link_to "Edit", newsadmin_edit_story_path(@article.id), :class => 'btn btn-primary btn-sm'%>&nbsp;<%= link_to "Delete", newsadmin_delete_story_path(@article.id), :class => 'btn btn-danger btn-sm'%></th>
+      </tr>
+     <% end %>
+    </tbody>
+  </table>
+</div>
+</br></br>

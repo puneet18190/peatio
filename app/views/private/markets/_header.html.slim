@@ -1,0 +1,17 @@
+header.navbar.navbar-default.navbar-static-top role = "navigation"
+  .container-fluid
+    ul#menu.nav.navbar-nav.navbar-left 
+      a.navbar-brand href=root_path style="position: relative;top:-9px;"
+        img src="/assets/exchange/logo-new.png"  style="width: 139px;margin-right:20px;"
+        | &nbsp;
+        = @market.name
+
+       
+    ul.nav.navbar-nav.navbar-right
+      - if current_user
+        = render partial: 'settings'
+      - else
+        p.navbar-text
+          == t('private.markets.mask.warning')
+     
+    

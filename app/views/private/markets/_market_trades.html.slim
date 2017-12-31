@@ -1,0 +1,16 @@
+h4.bigHeader MARKET TRADES
+#market_trades_wrapper 
+  #market_trades
+    .panel.panel-default
+      .panel-body.panel-body-head
+        table.table
+          thead: tr
+            th.at.col-md-3 #{t('.time')} 
+            th.my.col-md-2
+            th.price.col-md-4 #{t('.price')}
+            th.volume.col-md-3 #{t('.volume')}
+      .panel-body.panel-body-content
+        table.table.table-hover.all-trades
+          tbody style="color:#3c4d6b"
+        table.table.table-hover.my-trades
+          tbody style="color:#3c4d6b"

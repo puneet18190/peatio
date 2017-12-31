@@ -1,0 +1,106 @@
+doctype html
+html lang="en"
+  head
+    link href="/favicon.ico" rel="shortcut icon"
+    = include_gon
+    = stylesheet_link_tag 'market', media: "all"
+    = javascript_include_tag "market"
+    = javascript_include_tag "locales/#{I18n.locale}"
+    = render 'shared/html5'
+    = render 'shared/meta'
+    = csrf_meta_tags
+
+  body id='#{body_id}' data-lang="#{locale_name}"
+    audio preload='preload' id='success-fx'
+      source src="/sounds/success.mp3"
+
+    audio preload='preload' id='warning-fx'
+      source src="/sounds/warning.mp3"
+
+    = render partial: "private/markets/header"
+    #wrap
+      .content
+        .row style="margin-right:110px"
+          .col-md-5
+             = render partial: 'market_list'
+          .col-md-7
+            .row.header_change
+              .col-md-6 
+                .row.coin_exchange
+                  =@market.coin 
+                  | &nbspEXCHANGE
+                .row.name_exchange
+                  =@market.name
+              .col-md-6
+               header.right_section
+                 p.row style="display:none"
+                   div.col-md-3.col-offset-5
+                     .row
+                       span.vol
+                   div.col-md-3.col-offset-5
+                      .row
+                       | high
+                      .row
+                       span.high
+                   div.col-md-3.col-offset-5
+                      .row
+                       | low
+                      .row
+                       span.low
+                   div.col-md-3.col-offset-5 style="padding-right:29px!important"
+                      .row style="padding-right: 26px !important;"
+                       | change
+                      .row
+                       span.change
+            = render partial: 'candlestick'
+            = render partial: 'range_switch'
+            = render partial: 'indicator_switch'
+            .row 
+             .col-md-4
+                .col-md-11
+                   = render partial: 'bid_entry', locals: {market: @market, order: @order_bid }
+             .col-md-4.coming-soon
+               .col-md-11 style="left:4%" 
+                 #bid_entry.panel.panel-default.entry-left style="position:static;margin-right:0;"
+                   h4 STOP - LIMIT 
+                   .panel-body
+                     form#new_order_bid.new_order_bid accept-charset="UTF-8" action="/markets/ltcbtc/order_bids" data-remote="true" method="post"
+                       div style="margin:0;padding:0;display:inline" 
+                         input name="utf8" type="hidden" value="✓" /
+                       input#order_bid_ord_type  type="hidden" value="limit" /
+                       .input-group.price
+                         label.input-group-addon Stop
+                         span.label.label-danger.hint-price-disadvantage
+                         input#order_bid_price.form-control  type="text" /
+                         span.input-group-addon BTC
+                       .input-group.amount
+                         label.input-group-addon Limit
+                         input#order_bid_origin_volume.form-control  type="text" /
+                         span.input-group-addon LTC
+                       .input-group.total
+                         label.input-group-addon Amount
+                         span.label.label-info.hint-positions style=""  FULL
+                         input#order_bid_total.form-control  type="text" /
+                         span.input-group-addon BTC
+                       .row.row-tips
+                         .col-xs-24.text-right
+                           span.label.label-info.status-info
+                           span.label.label-success.status-success
+                           span.label.label-danger.status-danger
+                           span.current-balance.number 0.0000
+                           span.unit BTC
+                       button.btn.btn-default type="submit" style="float:right"  PLACE ORDER  
+                   .mask
+             .col-md-4 
+                .col-md-11 style="float:right;"
+                   = render partial: 'ask_entry', locals: {market: @market, order: @order_ask }
+            .row
+                = render partial: 'order_book'
+            .row
+                = render partial: 'depths'
+            .row
+               = render partial: 'my_orders'
+            .row
+               = render partial: 'market_trades'   
+             
+             

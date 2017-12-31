@@ -1,0 +1,75 @@
+<style>
+#chat_box{height:522px !important;     background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );height: 600px;background-color: #c0c0c0;background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); }
+#chat_messages{height:390px;padding:5px;overflow-x:hidden;overflow-y:scroll;}
+#list_users{height: 200px;overflow-y:scroll;overflow-x:hidden;}
+</style>
+<div class="container">
+<div class="row">
+    <div class="col-md-1 col-sm-12 col-xs-12">
+        <img src='assets/users.png' />
+        <h1>Chat</h1>
+    </div>
+    <div class="col-md-offset-1 col-md-8 col-xs-12 col-sm-12">
+        <div class="testimonial-block mb30">
+            <div id="chat_box" class="bg-white outline pinside30 mb20 chatGray">
+               <div id="chat_messages">
+                <% for @message in @messages do%>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4 class="testimonial-title"><%=@message.author%>:</h4> 20/10/17 3:25
+                    </div>
+                    <div class="col-md-9">
+                        <p class="testimonial-text"><%=@message.message%></p>
+                    </div>
+                </div><!-- end row-->
+               <% end %>
+               </div><!-- end chat messages-->
+               <div class="row chatSendMsg">
+                <div class="col-md-3">
+                <input class="form-control" id="chat_author" name="newsletter" placeholder="Your name:*" type="text">
+                </div>
+                <div class="col-md-9">
+                <div class="input-group">
+                    <input class="form-control" id="chat_message" name="newsletter" placeholder="Write something....." type="text">
+                    <span class="input-group-btn">
+<button id="send_message" class="btn btn-default" type="submit">Send!</button>
+</span> </div>
+
+
+                </div>
+              </div>
+               
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+<script>
+  $("#chat_messages").scrollTop($("#chat_messages")[0].scrollHeight);  
+  $("#send_message").click(function(){
+    
+    var author = String($("#chat_author").val());
+    var message = String($("#chat_message").val());
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth()+1; //January is 0!
+    var yyyy = today.getFullYear();
+    if(dd<10){
+      dd='0'+dd;
+    } 
+    if(mm<10){
+      mm='0'+mm;
+    } 
+    var hours = today.getHours();
+    var minutes = today.getMinutes();
+    var today = dd+'/'+mm+'/'+yyyy + " " + hours + ":" + minutes;
+    $.post("/save_chat_message", {author: String(author), message: String(message)}, function(data, status){
+      var text1 = "<div class='row'><div class='col-md-3'><h4 class='testimonial-title'>"+author+":</h4> "+String(today)+"</div>";
+      var text2 = "<div class='col-md-9'><p class='testimonial-text'>"+message+"</p></div></div>";
+      $("#chat_messages").append(text1 + text2); 
+      $("#chat_messages").scrollTop($("#chat_messages")[0].scrollHeight);  
+    });      
+  });
+</script>
