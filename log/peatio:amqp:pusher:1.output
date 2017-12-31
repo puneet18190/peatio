@@ -1,0 +1,5 @@
+peatio:amqp:pusher:1: process with pid 21116 started.
+/home/deploy/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.0.12/lib/action_dispatch/http/mime_type.rb:167: warning: already initialized constant Mime::PDF
+/home/deploy/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.0.12/lib/action_dispatch/http/mime_type.rb:167: warning: previous definition of PDF was here
+I, [2017-12-31T23:32:08.299323 #21116]  INFO -- : Connected to AMQP broker (prefetch: default)
+I, [2017-12-31T23:33:43.243090 #21116]  INFO -- : Received: {"member_id":512,"event":"account","data":"{\"balance\":\"0.0\",\"locked\":\"0.0\",\"currency\":\"btc\"}","locale":"en"}

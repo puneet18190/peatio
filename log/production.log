@@ -1,0 +1,106 @@
+I, [2017-12-31T23:32:12.679158 #21014]  INFO -- :   Rendered system_mailer/trade_execute_error.text.erb (9.1ms)
+I, [2017-12-31T23:32:13.491803 #21014]  INFO -- : 
+Sent mail to group@peatio.dev (29.3ms)
+I, [2017-12-31T23:32:22.428745 #21432]  INFO -- : Started GET "/" for 127.0.0.1 at 2017-12-31 23:32:22 +0200
+I, [2017-12-31T23:32:22.876611 #21432]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2017-12-31T23:32:23.285071 #21432]  INFO -- :   Rendered welcome/index.html.slim within layouts/landing (318.1ms)
+I, [2017-12-31T23:33:33.628209 #21432]  INFO -- :   Rendered shared/_html5.html.slim (793.2ms)
+I, [2017-12-31T23:33:33.637651 #21432]  INFO -- :   Rendered shared/_meta.html.slim (2.0ms)
+I, [2017-12-31T23:33:33.648249 #21432]  INFO -- :   Rendered shared/_alert.html.slim (9.4ms)
+I, [2017-12-31T23:33:33.668450 #21432]  INFO -- :   Rendered shared/_footer.html.slim (17.3ms)
+I, [2017-12-31T23:33:33.668780 #21432]  INFO -- : Completed 200 OK in 70792ms (Views: 70702.7ms | ActiveRecord: 9.2ms)
+I, [2017-12-31T23:33:33.670488 #21432]  INFO -- : Started GET "/" for 127.0.0.1 at 2017-12-31 23:33:33 +0200
+I, [2017-12-31T23:33:33.699496 #21432]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2017-12-31T23:33:33.728295 #21432]  INFO -- :   Rendered welcome/index.html.slim within layouts/landing (2.0ms)
+I, [2017-12-31T23:33:33.743597 #21432]  INFO -- :   Rendered shared/_html5.html.slim (0.2ms)
+I, [2017-12-31T23:33:33.745697 #21432]  INFO -- :   Rendered shared/_meta.html.slim (1.6ms)
+I, [2017-12-31T23:33:33.748797 #21432]  INFO -- :   Rendered shared/_alert.html.slim (0.1ms)
+I, [2017-12-31T23:33:33.749723 #21432]  INFO -- :   Rendered shared/_footer.html.slim (0.1ms)
+I, [2017-12-31T23:33:33.750793 #21432]  INFO -- : Completed 200 OK in 50ms (Views: 27.7ms | ActiveRecord: 0.5ms)
+I, [2017-12-31T23:33:33.851451 #21432]  INFO -- : Started GET "/assets/home/logo.png" for 127.0.0.1 at 2017-12-31 23:33:33 +0200
+I, [2017-12-31T23:33:33.873190 #21432]  INFO -- : Started GET "/assets/home/img-1.png" for 127.0.0.1 at 2017-12-31 23:33:33 +0200
+I, [2017-12-31T23:33:33.889272 #21432]  INFO -- : Started GET "/assets/home/img-2.png" for 127.0.0.1 at 2017-12-31 23:33:33 +0200
+I, [2017-12-31T23:33:33.904371 #21432]  INFO -- : Started GET "/assets/home/img-5.png" for 127.0.0.1 at 2017-12-31 23:33:33 +0200
+I, [2017-12-31T23:33:33.929762 #21432]  INFO -- : Started GET "/assets/home/img-4.png" for 127.0.0.1 at 2017-12-31 23:33:33 +0200
+I, [2017-12-31T23:33:33.974919 #21432]  INFO -- : Started GET "/assets/home/img-3.png" for 127.0.0.1 at 2017-12-31 23:33:33 +0200
+I, [2017-12-31T23:33:34.025340 #21432]  INFO -- : Started GET "/assets/home/img-6.png" for 127.0.0.1 at 2017-12-31 23:33:34 +0200
+I, [2017-12-31T23:33:34.043384 #21432]  INFO -- : Started GET "/assets/new_section.png" for 127.0.0.1 at 2017-12-31 23:33:34 +0200
+I, [2017-12-31T23:33:34.081954 #21432]  INFO -- : Started GET "/assets/footer_logo.fw.png" for 127.0.0.1 at 2017-12-31 23:33:34 +0200
+I, [2017-12-31T23:33:34.326281 #21432]  INFO -- : Started GET "/assets/comingsoon.png" for 127.0.0.1 at 2017-12-31 23:33:34 +0200
+I, [2017-12-31T23:33:34.352332 #21432]  INFO -- : Started GET "/assets/home/exchange-img.jpg" for 127.0.0.1 at 2017-12-31 23:33:34 +0200
+I, [2017-12-31T23:33:37.565283 #21432]  INFO -- : Started GET "/registration1" for 127.0.0.1 at 2017-12-31 23:33:37 +0200
+I, [2017-12-31T23:33:37.607811 #21432]  INFO -- : Processing by IdentitiesController#registration1 as HTML
+I, [2017-12-31T23:33:37.694278 #21432]  INFO -- :   Rendered identities/registration1.html.slim within layouts/application (46.4ms)
+I, [2017-12-31T23:33:37.708201 #21432]  INFO -- :   Rendered shared/_html5.html.slim (0.1ms)
+I, [2017-12-31T23:33:37.709889 #21432]  INFO -- :   Rendered shared/_meta.html.slim (0.3ms)
+I, [2017-12-31T23:33:37.712140 #21432]  INFO -- :   Rendered shared/_alert.html.slim (0.1ms)
+I, [2017-12-31T23:33:37.770113 #21432]  INFO -- :   Rendered shared/_header.html.slim (54.0ms)
+I, [2017-12-31T23:33:37.789732 #21432]  INFO -- :   Rendered shared/_flash.slim (8.9ms)
+I, [2017-12-31T23:33:37.789777 #21432]  INFO -- :   Rendered shared/_frame.html.slim (19.2ms)
+I, [2017-12-31T23:33:37.790376 #21432]  INFO -- :   Rendered shared/_footer.html.slim (0.1ms)
+I, [2017-12-31T23:33:37.790635 #21432]  INFO -- : Completed 200 OK in 183ms (Views: 147.6ms | ActiveRecord: 0.4ms)
+I, [2017-12-31T23:33:37.824910 #21432]  INFO -- : Started GET "/assets/home/logo.png" for 127.0.0.1 at 2017-12-31 23:33:37 +0200
+I, [2017-12-31T23:33:37.840340 #21432]  INFO -- : Started GET "/assets/footer_logo.fw.png" for 127.0.0.1 at 2017-12-31 23:33:37 +0200
+I, [2017-12-31T23:33:38.021672 #21432]  INFO -- : Started GET "/assets/comingsoon.png" for 127.0.0.1 at 2017-12-31 23:33:38 +0200
+I, [2017-12-31T23:33:42.363678 #21432]  INFO -- : Started POST "/registration2" for 127.0.0.1 at 2017-12-31 23:33:42 +0200
+I, [2017-12-31T23:33:42.397206 #21432]  INFO -- : Processing by IdentitiesController#registration2 as HTML
+I, [2017-12-31T23:33:42.397403 #21432]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"TTsYPKToHvY9bczkP5lOYhTp1lZOjeaVDEQ134iBZzE=", "currency1"=>"btc", "radio-group"=>"file"}
+I, [2017-12-31T23:33:43.637978 #21432]  INFO -- :   Rendered identities/file.html.slim within layouts/application (12.4ms)
+I, [2017-12-31T23:33:43.651233 #21432]  INFO -- :   Rendered shared/_html5.html.slim (0.5ms)
+I, [2017-12-31T23:33:43.651927 #21432]  INFO -- :   Rendered shared/_meta.html.slim (0.3ms)
+I, [2017-12-31T23:33:43.665447 #21432]  INFO -- :   Rendered shared/_alert.html.slim (13.3ms)
+I, [2017-12-31T23:33:43.665987 #21432]  INFO -- :   Rendered shared/_header.html.slim (0.1ms)
+I, [2017-12-31T23:33:43.666624 #21432]  INFO -- :   Rendered shared/_flash.slim (0.1ms)
+I, [2017-12-31T23:33:43.666714 #21432]  INFO -- :   Rendered shared/_frame.html.slim (0.4ms)
+I, [2017-12-31T23:33:43.667078 #21432]  INFO -- :   Rendered shared/_footer.html.slim (0.1ms)
+I, [2017-12-31T23:33:43.667514 #21432]  INFO -- : Completed 200 OK in 1270ms (Views: 45.2ms | ActiveRecord: 199.0ms)
+I, [2017-12-31T23:33:43.700896 #21432]  INFO -- : Started GET "/assets/home/logo.png" for 127.0.0.1 at 2017-12-31 23:33:43 +0200
+I, [2017-12-31T23:33:43.720494 #21432]  INFO -- : Started GET "/assets/footer_logo.fw.png" for 127.0.0.1 at 2017-12-31 23:33:43 +0200
+I, [2017-12-31T23:33:43.865961 #21432]  INFO -- : Started GET "/assets/comingsoon.png" for 127.0.0.1 at 2017-12-31 23:33:43 +0200
+I, [2017-12-31T23:33:43.882793 #21432]  INFO -- : Started GET "/assets/logout.png" for 127.0.0.1 at 2017-12-31 23:33:43 +0200
+I, [2017-12-31T23:33:49.743898 #21432]  INFO -- : Started GET "/history/orders" for 127.0.0.1 at 2017-12-31 23:33:49 +0200
+I, [2017-12-31T23:33:49.759715 #21432]  INFO -- : Processing by Private::HistoryController#orders as HTML
+I, [2017-12-31T23:33:49.815612 #21432]  INFO -- :   Rendered private/history/_tabs.html.slim (5.3ms)
+I, [2017-12-31T23:33:49.819422 #21432]  INFO -- :   Rendered private/history/_order.html.slim (0.0ms)
+I, [2017-12-31T23:33:49.831276 #21432]  INFO -- :   Rendered private/history/orders.html.slim within layouts/application (28.9ms)
+I, [2017-12-31T23:33:49.848894 #21432]  INFO -- :   Rendered shared/_html5.html.slim (0.1ms)
+I, [2017-12-31T23:33:49.849695 #21432]  INFO -- :   Rendered shared/_meta.html.slim (0.3ms)
+I, [2017-12-31T23:33:49.850249 #21432]  INFO -- :   Rendered shared/_alert.html.slim (0.1ms)
+I, [2017-12-31T23:33:49.850612 #21432]  INFO -- :   Rendered shared/_header.html.slim (0.1ms)
+I, [2017-12-31T23:33:49.851007 #21432]  INFO -- :   Rendered shared/_footer.html.slim (0.1ms)
+I, [2017-12-31T23:33:49.851361 #21432]  INFO -- : Completed 200 OK in 91ms (Views: 49.6ms | ActiveRecord: 7.8ms)
+I, [2017-12-31T23:33:49.881408 #21432]  INFO -- : Started GET "/assets/home/logo.png" for 127.0.0.1 at 2017-12-31 23:33:49 +0200
+I, [2017-12-31T23:33:49.894225 #21432]  INFO -- : Started GET "/assets/footer_logo.fw.png" for 127.0.0.1 at 2017-12-31 23:33:49 +0200
+I, [2017-12-31T23:33:50.111858 #21432]  INFO -- : Started GET "/assets/comingsoon.png" for 127.0.0.1 at 2017-12-31 23:33:50 +0200
+I, [2017-12-31T23:33:50.127455 #21432]  INFO -- : Started GET "/assets/logout.png" for 127.0.0.1 at 2017-12-31 23:33:50 +0200
+I, [2017-12-31T23:33:50.658928 #21432]  INFO -- : Started GET "/funds" for 127.0.0.1 at 2017-12-31 23:33:50 +0200
+I, [2017-12-31T23:33:50.678196 #21432]  INFO -- : Processing by Private::FundsController#index as HTML
+I, [2017-12-31T23:33:50.862868 #21432]  INFO -- :   Rendered private/funds/index.html.erb within layouts/funds (3.3ms)
+I, [2017-12-31T23:34:20.127455 #21432]  INFO -- :   Rendered shared/_html5.html.slim (0.3ms)
+I, [2017-12-31T23:34:20.130674 #21432]  INFO -- :   Rendered shared/_meta.html.slim (0.4ms)
+I, [2017-12-31T23:34:20.131388 #21432]  INFO -- :   Rendered shared/_header.html.slim (0.1ms)
+I, [2017-12-31T23:34:20.133154 #21432]  INFO -- :   Rendered shared/_footer.html.slim (0.1ms)
+I, [2017-12-31T23:34:20.133466 #21432]  INFO -- : Completed 200 OK in 29455ms (Views: 29275.1ms | ActiveRecord: 44.5ms)
+I, [2017-12-31T23:34:20.136734 #21432]  INFO -- : Started GET "/signout" for 127.0.0.1 at 2017-12-31 23:34:20 +0200
+I, [2017-12-31T23:34:20.163759 #21432]  INFO -- : Processing by SessionsController#destroy as HTML
+I, [2017-12-31T23:34:20.245874 #21432]  INFO -- : Redirected to http://localhost:3000/
+I, [2017-12-31T23:34:20.246014 #21432]  INFO -- : Completed 302 Found in 82ms (ActiveRecord: 18.8ms)
+I, [2017-12-31T23:34:20.249094 #21432]  INFO -- : Started GET "/" for 127.0.0.1 at 2017-12-31 23:34:20 +0200
+I, [2017-12-31T23:34:20.261280 #21432]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2017-12-31T23:34:20.301375 #21432]  INFO -- :   Rendered welcome/index.html.slim within layouts/landing (0.5ms)
+I, [2017-12-31T23:34:20.318583 #21432]  INFO -- :   Rendered shared/_html5.html.slim (0.1ms)
+I, [2017-12-31T23:34:20.319437 #21432]  INFO -- :   Rendered shared/_meta.html.slim (0.5ms)
+I, [2017-12-31T23:34:20.319999 #21432]  INFO -- :   Rendered shared/_alert.html.slim (0.1ms)
+I, [2017-12-31T23:34:20.320403 #21432]  INFO -- :   Rendered shared/_footer.html.slim (0.1ms)
+I, [2017-12-31T23:34:20.320601 #21432]  INFO -- : Completed 200 OK in 59ms (Views: 20.2ms | ActiveRecord: 3.6ms)
+I, [2017-12-31T23:34:20.392727 #21432]  INFO -- : Started GET "/assets/home/logo.png" for 127.0.0.1 at 2017-12-31 23:34:20 +0200
+I, [2017-12-31T23:34:20.406130 #21432]  INFO -- : Started GET "/assets/home/img-1.png" for 127.0.0.1 at 2017-12-31 23:34:20 +0200
+I, [2017-12-31T23:34:20.416938 #21432]  INFO -- : Started GET "/assets/home/img-2.png" for 127.0.0.1 at 2017-12-31 23:34:20 +0200
+I, [2017-12-31T23:34:20.431281 #21432]  INFO -- : Started GET "/assets/home/img-5.png" for 127.0.0.1 at 2017-12-31 23:34:20 +0200
+I, [2017-12-31T23:34:20.441803 #21432]  INFO -- : Started GET "/assets/home/img-4.png" for 127.0.0.1 at 2017-12-31 23:34:20 +0200
+I, [2017-12-31T23:34:20.459316 #21432]  INFO -- : Started GET "/assets/home/img-3.png" for 127.0.0.1 at 2017-12-31 23:34:20 +0200
+I, [2017-12-31T23:34:20.470457 #21432]  INFO -- : Started GET "/assets/home/img-6.png" for 127.0.0.1 at 2017-12-31 23:34:20 +0200
+I, [2017-12-31T23:34:20.481922 #21432]  INFO -- : Started GET "/assets/new_section.png" for 127.0.0.1 at 2017-12-31 23:34:20 +0200
+I, [2017-12-31T23:34:20.494298 #21432]  INFO -- : Started GET "/assets/footer_logo.fw.png" for 127.0.0.1 at 2017-12-31 23:34:20 +0200
+I, [2017-12-31T23:34:20.849228 #21432]  INFO -- : Started GET "/assets/comingsoon.png" for 127.0.0.1 at 2017-12-31 23:34:20 +0200
+I, [2017-12-31T23:34:20.860596 #21432]  INFO -- : Started GET "/assets/home/exchange-img.jpg" for 127.0.0.1 at 2017-12-31 23:34:20 +0200

@@ -1,0 +1,54 @@
+peatio:amqp:matching: process with pid 20994 started.
+/home/deploy/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.0.12/lib/action_dispatch/http/mime_type.rb:167: warning: already initialized constant Mime::PDF
+/home/deploy/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.0.12/lib/action_dispatch/http/mime_type.rb:167: warning: previous definition of PDF was here
+I, [2017-12-31T23:31:52.976052 #20994]  INFO -- : Connected to AMQP broker (prefetch: default)
+D, [2017-12-31T23:31:52.976235 #20994] DEBUG -- : orderbook broadcast: {:action=>"new", :market=>"btccny", :side=>:ask}
+D, [2017-12-31T23:31:53.027334 #20994] DEBUG -- : orderbook broadcast: {:action=>"new", :market=>"btccny", :side=>:bid}
+I, [2017-12-31T23:31:53.075563 #20994]  INFO -- : btccny engine already started. mode=run
+D, [2017-12-31T23:31:53.075643 #20994] DEBUG -- : orderbook broadcast: {:action=>"new", :market=>"ltccny", :side=>:ask}
+D, [2017-12-31T23:31:53.104226 #20994] DEBUG -- : orderbook broadcast: {:action=>"new", :market=>"ltccny", :side=>:bid}
+I, [2017-12-31T23:31:53.105411 #20994]  INFO -- : ltccny engine already started. mode=run
+D, [2017-12-31T23:31:53.105468 #20994] DEBUG -- : orderbook broadcast: {:action=>"new", :market=>"ltcbtc", :side=>:ask}
+D, [2017-12-31T23:31:53.109080 #20994] DEBUG -- : orderbook broadcast: {:action=>"new", :market=>"ltcbtc", :side=>:bid}
+D, [2017-12-31T23:31:53.384595 #20994] DEBUG -- : orderbook broadcast: {:action=>"add", :order=>{:id=>67, :timestamp=>1511474332, :type=>:bid, :volume=>#<BigDecimal:55593bc29158,'0.1E1',9(27)>, :price=>#<BigDecimal:55593bc29310,'0.3E-3',9(27)>, :market=>"ltcbtc", :ord_type=>"limit"}}
+D, [2017-12-31T23:31:53.400098 #20994] DEBUG -- : orderbook broadcast: {:action=>"add", :order=>{:id=>110, :timestamp=>1511655260, :type=>:ask, :volume=>#<BigDecimal:55593bc28a50,'0.4E-1',9(27)>, :price=>#<BigDecimal:55593bc28b18,'0.7E-3',9(27)>, :market=>"ltcbtc", :ord_type=>"limit"}}
+D, [2017-12-31T23:31:53.413083 #20994] DEBUG -- : orderbook broadcast: {:action=>"update", :order=>{:id=>67, :timestamp=>1511474332, :type=>:bid, :volume=>#<BigDecimal:55593b5c6c48,'0.963E0',9(27)>, :price=>#<BigDecimal:55593bc29310,'0.3E-3',9(27)>, :market=>"ltcbtc", :ord_type=>"limit"}}
+I, [2017-12-31T23:31:53.414831 #20994]  INFO -- : [ltcbtc] new trade - ask: 128/$0.0002/0.0 bid: 67/$0.0003/0.963 price: 0.0003 volume: 0.037 funds: 0.0000111
+I, [2017-12-31T23:31:53.415962 #20994]  INFO -- : ltcbtc engine already started. mode=run
+D, [2017-12-31T23:31:53.416021 #20994] DEBUG -- : orderbook broadcast: {:action=>"new", :market=>"dogecny", :side=>:ask}
+D, [2017-12-31T23:31:53.419533 #20994] DEBUG -- : orderbook broadcast: {:action=>"new", :market=>"dogecny", :side=>:bid}
+I, [2017-12-31T23:31:53.424191 #20994]  INFO -- : dogecny engine already started. mode=run
+D, [2017-12-31T23:31:53.424252 #20994] DEBUG -- : orderbook broadcast: {:action=>"new", :market=>"dogebtc", :side=>:ask}
+D, [2017-12-31T23:31:53.430882 #20994] DEBUG -- : orderbook broadcast: {:action=>"new", :market=>"dogebtc", :side=>:bid}
+I, [2017-12-31T23:31:53.431615 #20994]  INFO -- : dogebtc engine already started. mode=run
+D, [2017-12-31T23:31:53.431664 #20994] DEBUG -- : orderbook broadcast: {:action=>"new", :market=>"dashcny", :side=>:ask}
+D, [2017-12-31T23:31:53.438853 #20994] DEBUG -- : orderbook broadcast: {:action=>"new", :market=>"dashcny", :side=>:bid}
+I, [2017-12-31T23:31:53.446963 #20994]  INFO -- : dashcny engine already started. mode=run
+D, [2017-12-31T23:31:53.447029 #20994] DEBUG -- : orderbook broadcast: {:action=>"new", :market=>"dashbtc", :side=>:ask}
+D, [2017-12-31T23:31:53.447966 #20994] DEBUG -- : orderbook broadcast: {:action=>"new", :market=>"dashbtc", :side=>:bid}
+I, [2017-12-31T23:31:53.455408 #20994]  INFO -- : dashbtc engine already started. mode=run
+D, [2017-12-31T23:31:53.455470 #20994] DEBUG -- : orderbook broadcast: {:action=>"new", :market=>"riccny", :side=>:ask}
+D, [2017-12-31T23:31:53.463587 #20994] DEBUG -- : orderbook broadcast: {:action=>"new", :market=>"riccny", :side=>:bid}
+I, [2017-12-31T23:31:53.464521 #20994]  INFO -- : riccny engine already started. mode=run
+D, [2017-12-31T23:31:53.464589 #20994] DEBUG -- : orderbook broadcast: {:action=>"new", :market=>"ricbtc", :side=>:ask}
+D, [2017-12-31T23:31:53.471474 #20994] DEBUG -- : orderbook broadcast: {:action=>"new", :market=>"ricbtc", :side=>:bid}
+I, [2017-12-31T23:31:53.476124 #20994]  INFO -- : ricbtc engine already started. mode=run
+D, [2017-12-31T23:31:53.476181 #20994] DEBUG -- : orderbook broadcast: {:action=>"new", :market=>"ppccny", :side=>:ask}
+D, [2017-12-31T23:31:53.480561 #20994] DEBUG -- : orderbook broadcast: {:action=>"new", :market=>"ppccny", :side=>:bid}
+I, [2017-12-31T23:31:53.484154 #20994]  INFO -- : ppccny engine already started. mode=run
+D, [2017-12-31T23:31:53.484228 #20994] DEBUG -- : orderbook broadcast: {:action=>"new", :market=>"ppcbtc", :side=>:ask}
+D, [2017-12-31T23:31:53.486493 #20994] DEBUG -- : orderbook broadcast: {:action=>"new", :market=>"ppcbtc", :side=>:bid}
+I, [2017-12-31T23:31:53.495428 #20994]  INFO -- : ppcbtc engine already started. mode=run
+D, [2017-12-31T23:31:53.495491 #20994] DEBUG -- : orderbook broadcast: {:action=>"new", :market=>"xpmcny", :side=>:ask}
+D, [2017-12-31T23:31:53.503540 #20994] DEBUG -- : orderbook broadcast: {:action=>"new", :market=>"xpmcny", :side=>:bid}
+I, [2017-12-31T23:31:53.510833 #20994]  INFO -- : xpmcny engine already started. mode=run
+D, [2017-12-31T23:31:53.510910 #20994] DEBUG -- : orderbook broadcast: {:action=>"new", :market=>"xpmbtc", :side=>:ask}
+D, [2017-12-31T23:31:53.512112 #20994] DEBUG -- : orderbook broadcast: {:action=>"new", :market=>"xpmbtc", :side=>:bid}
+I, [2017-12-31T23:31:53.532273 #20994]  INFO -- : xpmbtc engine already started. mode=run
+D, [2017-12-31T23:31:53.532343 #20994] DEBUG -- : orderbook broadcast: {:action=>"new", :market=>"flocny", :side=>:ask}
+D, [2017-12-31T23:31:53.535523 #20994] DEBUG -- : orderbook broadcast: {:action=>"new", :market=>"flocny", :side=>:bid}
+I, [2017-12-31T23:31:53.545452 #20994]  INFO -- : flocny engine already started. mode=run
+D, [2017-12-31T23:31:53.545515 #20994] DEBUG -- : orderbook broadcast: {:action=>"new", :market=>"flobtc", :side=>:ask}
+D, [2017-12-31T23:31:53.552363 #20994] DEBUG -- : orderbook broadcast: {:action=>"new", :market=>"flobtc", :side=>:bid}
+I, [2017-12-31T23:31:53.563714 #20994]  INFO -- : flobtc engine already started. mode=run
+I, [2017-12-31T23:31:53.563763 #20994]  INFO -- : All engines reloaded.

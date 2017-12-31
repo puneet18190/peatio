@@ -1,0 +1,4 @@
+websocket_api.rb: process with pid 20954 started.
+/home/deploy/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.0.12/lib/action_dispatch/http/mime_type.rb:167: warning: already initialized constant Mime::PDF
+/home/deploy/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.0.12/lib/action_dispatch/http/mime_type.rb:167: warning: previous definition of PDF was here
+I, [2017-12-31T23:31:41.904137 #20954]  INFO -- : Connected to AMQP broker.

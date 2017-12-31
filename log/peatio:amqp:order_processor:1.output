@@ -1,0 +1,46 @@
+peatio:amqp:order_processor:1: process with pid 20910 started.
+/home/deploy/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.0.12/lib/action_dispatch/http/mime_type.rb:167: warning: already initialized constant Mime::PDF
+/home/deploy/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.0.12/lib/action_dispatch/http/mime_type.rb:167: warning: previous definition of PDF was here
+I, [2017-12-31T23:31:30.244189 #20910]  INFO -- : Connected to AMQP broker (prefetch: 5)
+I, [2017-12-31T23:31:35.250614 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:31:40.251100 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:31:45.251303 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:31:50.252207 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:31:55.253011 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:32:00.253215 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:32:05.255247 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:32:10.265297 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:32:15.265497 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:32:20.265828 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:32:25.266026 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:32:30.266192 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:32:35.266998 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:32:40.267208 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:32:45.268042 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:32:50.268747 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:32:55.269152 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:33:00.269304 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:33:05.269716 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:33:10.269717 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:33:15.270168 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:33:20.272859 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:33:25.273753 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:33:30.273988 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:33:35.274121 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:33:40.274310 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:33:45.274445 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:33:50.274675 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:33:55.275182 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:34:00.276040 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:34:05.276273 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:34:10.277000 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:34:15.277350 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:34:20.277455 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:34:25.277653 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:34:30.277959 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:34:35.278154 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:34:40.278824 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:34:45.279077 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:34:50.279273 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:34:55.279418 #20910]  INFO -- : Cancel queue size: 0
+I, [2017-12-31T23:35:00.279971 #20910]  INFO -- : Cancel queue size: 0
