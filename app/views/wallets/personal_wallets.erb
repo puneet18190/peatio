@@ -1,0 +1,182 @@
+
+<div class="container">
+<h2>Personal wallets - demo</h2>
+<div class="row" style="    margin-top: 50px;">
+
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <div class="" style="background-color: #15549a;    height: 244px;
+
+padding: 20px;">
+
+            <center>
+                <h1 class="slider-title">Your balance ~ </h1>
+                <h1 style="color:#83bcfa"> $558</h1>
+            </center>
+
+           
+            <center> <a href="team.html" class="btn btn-default hidden-xs">Go to Exchange</a>
+        </center></div> 
+    </div>
+    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 nopadding col-xs-12">
+                <div class="bg-white  number-block outline" style="background-color:#83bcfa">
+                    <div class="mb10"><img src="/assets/send.png" style="margin-top:11px"/></div>
+                    <h3>Send</h3>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 nopadding col-xs-12">
+                <div class="bg-white  number-block outline">
+                    <div class="mb10"><img src="/assets/recieve.png" style="margin-top:11px"/></div>
+                    <h3>Recive</h3>
+                </div>
+            </div>
+            
+        </div>
+        <div class="row" style="border: 1px solid #83bcfa;">
+        <div class="request-form">
+       
+      
+        <form class="row" action="get-quote.php" method="post">
+            <!-- Text input-->
+            <div class="row panel-body" style="padding:3px;">
+            <div class=" col-md-2">
+              <label class="" style="font-size: 15px;line-height: 2.4;">Coin  </label> 
+            </div>
+            <div class=" col-md-10">
+            <select class="form-control " style="height:35px;">
+           <option >Bitcoin</option>  
+           <option >Litecoin</option>  
+
+            </select>
+           </div>
+           </div>
+            
+
+
+            <div class="row panel-body" style="padding:3px;">
+            <div class=" col-md-2">
+              <label class="" style="font-size: 15px;line-height: 2.4;">Pay to  </label> 
+            </div>
+            <div class=" col-md-10">
+            <input name="username" class="form-control input-sm" id="name" required="" type="text" style="height:35px;">
+           </div>
+           </div>
+
+           <div class="row panel-body" style="padding:3px;">
+           <div class=" col-md-2">
+             <label class="" style="font-size: 15px;line-height: 2.4;">Description  </label> 
+           </div>
+           <div class=" col-md-10">
+           <input name="username" class="form-control input-sm" id="name" required="" type="text" style="height:35px;">
+          </div>
+          </div>
+
+          <div class="row panel-body">
+          <div class=" col-md-2">
+            <label class="" style="font-size: 15px;line-height: 2.4;">Amount  </label> 
+          </div>
+          <div class=" col-md-10">
+          <input name="username" class="form-control input-sm" id="name" required="" type="text" style="height:35px;">
+         </div>
+         </div>
+
+         <div class="row panel-body">
+         <div class=" col-md-2">
+           <label class="" style="font-size: 15px;line-height: 2.4;">Fee  </label> 
+         </div>
+         <div class=" col-md-10">
+        
+        </div>
+        </div>
+            
+         
+           
+          
+            <!-- Button -->
+            <div class="form-group col-md-6">
+               
+                <button class="btn btn-default btn-block" type="submit" style="width:97px">Send</button>
+            </div>
+        </form>
+    </div>
+
+
+        </div>
+
+      
+    </div>
+</div>
+</div>
+
+<div class="row" style="margin-top:50px;margin-botton:50px"> <h1 style="margin-bottom:20px">Addresses</h1>
+<table class="table table-bordered">
+<thead >
+<tr  >
+    <th class="col-md-4" colspan="3" style="    border: 1px solid #83bcfa;    background-color: #83bcfa;">Bitcoin
+    <i class="fa fa-minus-circle " style="float:right"></i></th>
+    
+</tr>
+</thead>
+<thead>
+    <tr>
+        <th class="col-md-4">Address</th>
+        <th class="col-md-4">Balance</th>
+        <th class="col-md-4">Tx</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>
+            <a>1FSSJgay11ZeAzzh6KeBdC6YpRgFwrxxf8</a>
+        </td>
+        <td></td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>
+            <a>12GU7MxnZDQrjVxCmNLXbox7QJHTta6okq</a>
+        </td>
+        <td>0.1</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td style="border-bottom: 1px solid #83bcfa;">
+            <a>17VoAvkNBp6NiXm3NfueYRXMmimSdoShKg</a>
+        </td>
+        <td style="border-bottom: 1px solid #83bcfa;">0.02450</td>
+        <td style="border-bottom: 1px solid #83bcfa;">0</td>
+    </tr>
+
+    <tr  >
+    <td class="col-md-4" colspan="3" style="border: 1px solid #83bcfa;font-weight:bold">Litecoin
+    <i class="fa fa-plus-circle " style="float:right"></i></th>
+    </td>
+    
+</tr>
+</tbody>
+
+
+
+
+</table>
+</div>
+
+
+
+<div class="row" style="margin-top:50px;margin-botton:50px"> <h1 style="margin-bottom:20px">History</h1>
+<table class="table table-bordered">
+
+<thead>
+    <tr>
+        <th class="col-md-4">Date</th>
+        <th class="col-md-4">Description</th>
+        <th class="col-md-4">Amount</th>
+        <th class="col-md-4">Balance</th>
+    </tr>
+</thead>
+
+
+
+</table>
+</div>

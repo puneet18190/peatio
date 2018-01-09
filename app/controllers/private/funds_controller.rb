@@ -24,10 +24,12 @@ module Private
       current_user.accounts.each do |account|
         
         next if not account.currency_obj.coin?
-        puts(88889999999999999999999999999999999999999999999999999999999999999)
+      
         if account.payment_addresses.blank?
           
           account.payment_addresses.create(currency: account.currency)
+          #address = account.payment_addresses.last
+          #address.gen_address if address.address.blank?
         else
           address = account.payment_addresses.last
           address.gen_address if address.address.blank?

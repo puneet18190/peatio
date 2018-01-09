@@ -31,9 +31,9 @@ html lang="en"
            - unless current_user
             .top-nav.top-nav-right
               span.top-text.hidden-xs.homeExchange
-                a href="/registration1"   Register
+                a href="/wallets/registration"   Register
               span.top-text.hidden-xs.homeExchange
-                a href="/auth/login" Login
+                a href="/auth/login" Sign in 
            - else  
              .top-nav.top-nav-right style="position:relative;top:-5px;"
               span.top-text.homeHeaders style="padding-left:0;"
@@ -41,15 +41,14 @@ html lang="en"
                  #navigation style="z-index:1000;margin-top:3px;padding-left:20px;" 
                    /! navigation start
                    ul
-                     li.active
-                       a href="/dashboard" style=("position: relative;top: 3px;padding:0;color: #83bcfa;margin-right:17px;font-size: 20px;line-height: 1.6;font-weight:100;font-size:16px;position: relative;top: 3px;") Dashboard
+                     
                      li.active
                        a href="/funds" style=("position: relative;top: 3px;padding:0;color: #83bcfa;font-size: 20px;line-height: 1.6;font-weight:100;font-size:16px;position: relative;top: 3px;")  Wallets
                        ul
                          li style="border-bottom:none"
-                           a.animsition-link href="/wallets/mergewallets" style=("border-bottom:none;text-align:left;background: #15549a;color:#83bcfa") title=("Home page 1")  Transfer wallets
+                           a.animsition-link href="/funds" style=("border-bottom:none;text-align:left;background: #15549a;color:#83bcfa") title=("Home page 1")  Shared wallets
                          li
-                           a.animsition-link href="/wallets/designedwallets" style=("border-bottom:none;text-align:left;background: #15549a;color:#83bcfa;font-size:13px;") title=("Home page 1")  Design paper wallets
+                           a.animsition-link href="/wallets/personal_wallets" style=("border-bottom:none;text-align:left;background: #15549a;color:#83bcfa;font-size:13px;") title=("Home page 1")  Personal wallets demo
               span.top-text.homeHeaders
                 a href="/history/orders" style="font-size:16px"  History
               span.top-text.hidden-xs.homeHeaders
@@ -64,7 +63,7 @@ html lang="en"
             /! logo
             .logo
               a href="/" 
-                img alt=("logo") src='/assets/home/logo.png' style="margin-top:9px" /
+                img alt=("logo") src='/assets/blocksgatelogo.png' style="margin-top:9px" /
           /! logo
           .col-md-9.col-sm-12.col-xs-12
             #navigation

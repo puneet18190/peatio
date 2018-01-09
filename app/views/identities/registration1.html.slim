@@ -9,7 +9,7 @@ html lang="en"
           .row
             .col-md-12.col-sm-12.col-xs-12
               .section-title.mb20
-                h1.page-title Registration
+                h1.page-title Create a personal wallet
                 
           .row.pinside30
             p.lead style="margin-botton:27px;"
@@ -25,7 +25,7 @@ html lang="en"
                     th
                       | Currency
                       span style="float:right" 
-                        input placeholder="search:" type="text" style="pointer-events:none;font-weight: normal;" /
+                        input placeholder="search:" type="text" style="pointer-events:none;font-weight: normal;border: 1px solid #dee4ee;" /
                         span/
                 tbody
                   tr
@@ -38,11 +38,6 @@ html lang="en"
                       input#currency2.css-checkbox name="currency2" type="checkbox" value="ltc" /
                       label.css-label for="currency2" 
                     td Litecoin
-                  tr
-                    th scope="row" 
-                      input#currency3.css-checkbox name="currency3" type="checkbox" value="doge" /
-                      label.css-label for="currency3" 
-                    td Dogecoin
                   tr  
                     th scope="row" 
                       input#currency4.css-checkbox name="currency4" type="checkbox" value="dash" /
@@ -68,108 +63,53 @@ html lang="en"
                       input#currency8.css-checkbox name="currency8" type="checkbox" value="flo" /
                       label.css-label for="currency8"
                     td Florincoin
+                  tr
+                    th scope="row" 
+                      input#currency3.css-checkbox name="currency3" type="checkbox" value="doge" /
+                      label.css-label for="currency3" 
+                    td Dogecoin
           .row style="margin-top:40px;margin-left:30px" 
             .col-md-12.col-sm-12.col-xs-12
+              
               .section-title.mb30
                 p.lead
                   | How would you like to access your wallets?
                 fieldset#group1
+                  input#test4  name="radio-group" value="signup" type="radio"  onclick="loginClick()"/
+                  label for="test4"  Login details + Seed 
                   input#test1  name="radio-group" value="usb" type="radio" /
-                  label for="test1"   Safewex usb
-                  input#test2  name="radio-group" value="wallet" type="radio" /
-                  label for="test2"  Paper wallet
-                  input#test3  name="radio-group" value="file" type="radio" /
-                  label for="test3"  Json 
-                  input#test4  name="radio-group" value="signup" type="radio" /
-                  label for="test4"  Username and password
-                  input#test5  name="radio-group" value="ledger" disabled='disabled' type="radio" class="coming-soon" /
-                  label.coming-soon for="test5"  Ledger
-                  input#test6  name="radio-group" value="trezor" disabled='disabled' type="radio" class="coming-soon" /
-                  label.coming-soon for="test6"  Trezor
-          
+                  label.coming-soon for="test1"   (Blockskeys usb)
+                  input#test2  name="radio-group" value="wallet" type="radio"  /
+                  label.coming-soon for="test2"  Wallet code file
+                  input#test5  name="radio-group" value="ledger" disabled='disabled' type="radio"  /
+                  label.coming-soon for="test5"  (Ledger)
+                  input#test6  name="radio-group" value="trezor" disabled='disabled' type="radio"  /
+                  label.coming-soon for="test6"  (Trezor)
+              p.lead.login style="margin-botton:27px;display:none" Login details
+              .section-title.mb30.login style="display:none"
+                  label for="username"  style="color: #3c4d6b;font-size: 15px;" Sign in E-mail  
+                  span.error.text-danger.emailerror  style="display:none"  can't be blank
+                  input#username.form-control.input-xs  name="username"  oninvalid="this.setCustomValidity('Please Enter valid email')" type="email" required="required field" autofocus="true"/
+                  label for="username" style="color: #3c4d6b;font-size: 15px;"  Password  
+                  span.error.text-danger.passerror  style="display:none"  can't be blank
+                  input#pass.form-control.input-xs  name="password"  type="password" required="required field"/
+                  label for="seed"  style="color: #3c4d6b;font-size: 15px;"  Seed
+                  img src="/assets/help.png" style="height:16px;padding-left: 3px;" title="The seed is a random phrase that is uded to generate you private keys."
+                  input.form-control.input-xs  name="confirmpassword" required="required field" value="constant forest adore false green weave stop guy fur freeze giggle clock"  type="input" /
           .btn-action
-            input.btn.btn-primary.loginbtn type="Submit" style="margin-top:30px" value="Create wallets"/
-#hero-wrapper 
-  .container
-    .row
-      .col-xs-12
-        h1
-          | Create a buisness bitcoin account
-          br/
-          #video_tour.modal.fade aria-hidden="true" aria-labelledby="" data-event-label="" role="dialog" 
-            .modal-dialog.modal-video.modal-lg
-              .modal-content
-                .modal-header
-                  button.close aria-hidden="true" data-dismiss="modal" type="button" 
-                  .clear
-                .modal-body.flex-video.widescreen
-          .subhead
-            | The first place!
-            a.btn data-target="#video_tour" data-toggle="modal" 
-              span.flaticon.stroke.right-circle-1
-              | Watch Video
-  #features-nav
-    .nav-item
-      a href="" 
-       .nav-wrap
-         .nav-icon.pitch
-         .nav-text
-           | Create Your
-           br>/
-           | Business Pitch
-    .nav-item
-      a href="" 
-       .nav-wrap
-         .nav-icon.guidance
-         .nav-text
-           | Step-By-Step
-           br>/
-           | Guidance
-    .nav-item
-      a.active href="" 
-       .nav-wrap
-         .nav-icon.samples
-         .nav-text
-           | Sample
-           br>/
-           | Plans
-    .nav-item
-      a href="" 
-       .nav-wrap
-         .nav-icon.financials
-         .nav-text
-           | Automatic
-           br>/
-           | Financials
-    .nav-item
-      a href="" 
-       .nav-wrap
-         .nav-icon.presentation
-         .nav-text
-           | Impressive
-           br>/
-           | Plans
-    .nav-item.last
-      a href="" 
-       .nav-wrap
-         .nav-icon.dashboards
-         .nav-text
-           | Performance
-           br>/
-           | Dashboards
-    .features-nav-signup-wrap
-      .features-nav-signup style=("display: none;") 
-        a href="/pricing"  Sign Up
-    .clear
-
-
-
-
+            input.btn.btn-primary.loginbtn type="Submit" style="margin-top:90px" value="Create wallets"/
 
 javascript:
+  function loginClick(){
+    $(".login").show()
+  }
   $(".loginbtn").click(function(e){
     e.preventDefault();
     e.stopPropagation();
+    if ($("#username").is(':valid') == false ) 
+      $(".emailerror").show()
+    if ($("#pass").is(':valid') == false ) 
+      $(".passerror").show()
     if($('input[name=radio-group]:checked').val() == undefined){
       alert("Select wallet");
     }else if($('input[type=checkbox]:checked').val() == undefined){

@@ -39,10 +39,7 @@ class IdentitiesController < ApplicationController
 
     #Currency.codes.delete("btc")
     #create_anonymous_user
-    if(params["radio-group"] == "signup")
-      return redirect_to "/signup"
-      binding.pry 
-    end
+    
      
     Currency.codes.clear
     
@@ -57,7 +54,7 @@ class IdentitiesController < ApplicationController
     @sessions = SessionsController.new
     @sessions.request = request;
     @sessions.response = response;
-    @sessions.create_anonymous_user 
+    @sessions.create_anonymous_user(params["username"], params["password"])
     
     @payment_method = params["radio-group"]
     @data = []
@@ -125,7 +122,7 @@ class IdentitiesController < ApplicationController
       
       render "file" 
     else
-      redirect_to "/signup"
+      redirect_to "/funds"
     end
   end
 

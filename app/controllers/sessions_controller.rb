@@ -17,11 +17,13 @@ class SessionsController < ApplicationController
     #params.required(:identity).permit('111', '111')
   end
 
-  def create_anonymous_user()
+  def create_anonymous_user(username, passwordu)
+  
+  
 
-    @email = "E#{ROTP::Base32.random_base32(8).upcase}@SAFEWEX.com"
+    #@email = "E#{ROTP::Base32.random_base32(8).upcase}@SAFEWEX.com"
     
-    @IDs = Identity.create(email: @email, password: 'Pass@word8', password_confirmation: 'Pass@word8', is_active: true)
+    @IDs = Identity.create(email: username, password: passwordu, password_confirmation: passwordu, is_active: true)
     
     @member = Member.create(email: @IDs.email, phone_number:'527132209', activated: true)
     
@@ -49,11 +51,11 @@ class SessionsController < ApplicationController
 
 
   def create
-    
+    Currency.codes.delete('cny')
     puts("create in session ctrl")
     if !require_captcha? || simple_captcha_valid?
       @member = Member.from_auth(auth_hash)
-      
+    
     end
     
     if @member
@@ -73,6 +75,35 @@ class SessionsController < ApplicationController
       increase_failed_logins
       redirect_to signin_path, alert: t('.error')
     end
+
+    
+
+    current_user.accounts.each do |account|
+      next if not account.currency_obj.coin?
+      if account.payment_addresses.blank?
+        
+        account.payment_addresses.create(currency: account.currency)
+        
+      end
+    end
+
+    current_user.accounts.each do |account|
+      
+      next if not account.currency_obj.coin?
+    
+      if account.payment_addresses.blank?
+        
+        account.payment_addresses.create(currency: account.currency)
+        #address = account.payment_addresses.last
+        #address.gen_address if address.address.blank?
+      else
+        address = account.payment_addresses.last
+        address.gen_address if address.address.blank?
+      end
+    end
+
+
+
   end
 
   def failure

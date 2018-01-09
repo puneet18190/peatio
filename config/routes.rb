@@ -152,6 +152,8 @@ Peatio::Application.routes.draw do
   get '/articles/hardware_wallets', to: 'articles#hardware_wallets', as: 'hardware_wallets'
   get '/wallets/mergewallets', to: 'wallets#mergewallets', as: 'mergewallets'
   get '/wallets/designedwallets', to: 'wallets#designedwallets', as: 'designedwallets'
+  get '/wallets/personal_wallets', to: 'wallets#personal_wallets', as: 'personal_wallets'
+  get '/wallets/registration', to: 'wallets#registration', as: 'registration'
 
   
   #news controller
