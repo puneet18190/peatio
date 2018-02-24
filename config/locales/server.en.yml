@@ -947,7 +947,7 @@ en:
         time: Place Time
       mask:
         warning: Please <a class=text-white href='/wallets/registration'>Sign up</a> or <a class=text-white
-          href='/auth/login'>Sign in</a> for operation
+          href='/signin'>Sign in</a> for operation
       klime_chart:
         title: Candlestick Charts
       global:
@@ -1861,8 +1861,8 @@ en:
     application:
       close: Close
     meta:
-      page_title: Safewex - Cryptocurrency Exchange
-      page_description: Safewex - Cryptocurrency Exchange
+      page_title: Blocksgate - Cryptocurrency Exchange
+      page_description: Blocksgate - Cryptocurrency Exchange
       page_keywords: Peatio,Opensource,Exchange,Cryptocurrency
   members:
     edit:

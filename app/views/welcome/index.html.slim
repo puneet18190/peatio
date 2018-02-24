@@ -1,8 +1,3 @@
-
-
-       
- 
-
 doctype html
 html lang="en" 
   body.animsition
@@ -24,11 +19,11 @@ html lang="en"
           .col-md-7.hidden-xs.hidden-sm
             .top-nav
               span.top-text-left.hidden-xs.homeExchange
-                a href="/markets/ltcbtc"  Money xchange
+                a href="/markets/ltcbtc"  Exchange
               span.top-text-left.hidden-xs.homeHeaders.coming-soon
-                a href=""  Margin
+                a href=""  
               span.top-text-left.hidden-xs.homeHeaders.coming-soon
-                a href=""  Lending
+                a href=""  
           .col-md-5.col-sm-12.text-right.col-xs-12
           #getstart.row
            - unless current_user
@@ -36,27 +31,26 @@ html lang="en"
               span.top-text.hidden-xs.homeExchange
                 a href="/wallets/registration" Register
               span.top-text.hidden-xs.homeExchange
-                a href="/auth/login" Sign in 
+                a href="/signin" Sign in 
            - else  
-             .top-nav.top-nav-right style="position:relative;top:-5px"
+             .top-nav.top-nav-right style=""
               span.top-text.homeHeaders style="padding-left:0;"
                 div style="float:left"
-                 #navigation style="z-index:1000;margin-top:6px;padding-left:20px;" 
+                 #navigation style="z-index:1000;margin-top:3px;padding-left:20px;" 
                    /! navigation start
                    ul
+                     
                      li.active
-                       a href="/dashboard" style=("padding:0;color: #83bcfa;margin-right:17px;font-size: 20px;line-height: 1.6;font-weight:100;font-size:16px")  Dashboard
-                     li.active
-                       a href="/funds" style=("padding:0;color: #83bcfa;font-size: 20px;line-height: 1.6;font-weight:100;font-size:16px")  Wallets
+                       a href="/funds" style=("padding:0;color: #83bcfa;font-size: 14px;")  Wallets
                        ul
                          li style="border-bottom:none"
-                           a.animsition-link href="/wallets/mergewallets" style=("border-bottom:none;text-align:left;background: #15549a;color:#83bcfa") title=("Home page 1")  Transfer wallets
+                           a.animsition-link href="/funds" style=("border-bottom:none;text-align:left;background: #15549a;color:#83bcfa") title=("Home page 1")  Shared wallets
                          li
-                           a.animsition-link href="/wallets/designedwallets" style=("border-bottom:none;text-align:left;background: #15549a;color:#83bcfa;font-size:13px;") title=("Home page 1")  Design paper wallets
+                           a.animsition-link href="/wallets/personal_wallets" style=("border-bottom:none;text-align:left;background: #15549a;color:#83bcfa;font-size:13px;") title=("Home page 1")  Personal wallets demo
               span.top-text.homeHeaders
-                a href="/history/orders" style="font-size:16px"  History
+                a href="/history/orders" style="font-size:14px"  History
               span.top-text.hidden-xs.homeHeaders
-                a href="/tickets" style="font-size:16px"  Tickets
+                a href="/tickets" style="font-size:14px"  Tickets
               span.top-text.hidden-xs.homeHeaders.signout-link
                 a href="/signout" 
     /! /.top-bar
@@ -65,8 +59,10 @@ html lang="en"
         .row
           .col-md-2.col-sm-12.col-xs-6
             /! logo
-            .logo
-                img alt=("logo") src='/assets/blocksgatelogo.png' style="margin-top:10px" /
+            .logo style="display:flex"
+                img alt=("logo") src='/assets/simplelogo.png' style="margin-top: 10px;height: 38px;" / 
+                h2  style="color:#15549a;width: 50%;margin-top: 10px;margin-left: 8px;font-size:19px" BLOCKS
+                h2  style="color:#15549a;width: 50%;margin-top: 10px;font-size:19px;font-weight:bold" GATE
           /! logo
           .col-md-9.col-sm-12.col-xs-12
             #navigation
@@ -91,22 +87,8 @@ html lang="en"
                     li
                       a.animsition-link href="/blog-listing.html" title=("Blog Listing")  Api
                 li
-                  a.animsition-link href="/articles/safewex"  Help
-                  ul
-                    li
-                      a.animsition-link href="/articles/safewex" title=("Blog Listing")  How it works
-                    li
-                      a.animsition-link href="/articles/protect_yourself" title=("Blog Listing")  How to protect yourself from lost
-                    li
-                      a.animsition-link href="/articles/bitcoin_wallet" title=("Blog Listing")  Bitcoin wallet
-                    li
-                      a.animsition-link href="/articles/Hardware_wallets" title=("Blog Listing")  Hardware wallets
-                    li
-                      a.animsition-link href="/" title=("Blog Listing")  Buy bitcoin
-                    li
-                      a.animsition-link href="/" title=("Blog Listing")  Deposit and Withdraw
-                    li
-                      a.animsition-link href="/" title=("Blog Listing") How to trade all currencies
+                  a.animsition-link href=""  Help
+                  
                   
                
             /! /.navigation start
@@ -122,96 +104,64 @@ html lang="en"
         img alt=("Borrow - Loan Company Website Template") src='#{image_path 'blockchain-technologies.jpg'}' /
         .container
           .row
-            .col-lg-6.col-md-12.col-sm-12.col-xs-12
-              .slider-captions
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12 style="text-align:center;"
+              .slider-captions.center
                 /! slider-captions
-                h1.slider-title THE BLOCKCHAIN TRADING INTERFACE  
-                h2.slider-title style="font-size:27px;line-height:35px"  A new level of online shopping and sales
+                h1.slider-title A PROVEN TRADING SYSTEM THAT PUTS YOU IN CHARGE 
+                h2.slider-title style="font-size:23px;line-height:35px"  We are on a mission to provide for our investors an opportunity to experience a safe, simple, and seamless transactional market operations using advanced technologies.
                 p.slider-text.hidden-xs
-                  a.strong.text-highlight href="/articles/safewex" style="font-size: 25px; text-decoration: underline;" Read more
-                a.btn.btn-default.hidden-xs href="/registration1"  Get Started
+                  a.strong.text-highlight href="" style="font-size: 17px; text-decoration: underline;padding-left:2px" Read more
+                a.btn.btn-default.hidden-xs href="/registration1" style="padding:13px 20px" Get Started
               /! /.slider-captions
     
    
-.hp
+.hp.bg-white
+  
+  .container
+    .row style="padding-top:100px;"
+      .col-lg-6
+        h1 Trading platform
+        p style="font-size:18px;line-height:1.6"
+         | Blocksgate is a proven system that offers every investor a chance to carry out direct actions using advanced technologies. Our trading platform is the safest system for buying and selling of digital currencies at low fees and providing you with a whopping benefit of a unique wallet and a guide list to make transactions simple and easier.
+      .col-lg-6
+        img src="assets/ghg.png" style=("    height: 431px;\n    width: 623px;") /
+  .section-space80.bg-white 
   .section-space80.bg-white
     .container
-      .row
-        .col-lg-12.col-md-12.col-sm-12.col-xs-12
-          .section-title.mb60.text-center
-            /! section title start
-            h2 style="font-size:47px !important" Benefits of createing a personal wallet
-          /! /.section title start
-      .row
-        .col-lg-4.col-sm-4.text-center.col-md-4.col-xs-12
-          .feature.mb40
-            img alt="" src="assets/home/img-1.png" /
-            .feature-content
-              h3 safety
-              p
-                | 100% protextion againds hackers , system emphasizes the safety of your money, and allows you to connect in the most secure way 
-        .col-lg-4.col-sm-4.text-center.col-md-4.col-xs-12
-          .feature.mb40
-            img alt="" src="assets/home/img-2.png" /
-            .feature-content
-              h3 Confidentiality
-              p
-                | the system does not retain personal data about the customer 
-        
-        .col-lg-4.col-sm-4.text-center.col-md-4.col-xs-12
-          .feature.mb40
-            img alt="" src="assets/home/img-5.png" /
-            .feature-content
-              h3 No restrictions
-              p
-                | |  no restrictions on withdrawals or deposits, actions are performed automatically without the need for intermediate certificates
-        .col-lg-4.col-sm-4.text-center.col-md-4.col-xs-12
-          .feature.mb40
-            img alt="" src="assets/home/img-4.png" /
-            .feature-content
-              h3 lower fees
-              p
-                | fixed fee per action. 
-        .col-lg-4.col-sm-4.col-md-5.text-center.col-xs-12
-          .feature.mb40
-            img alt="" src="assets/home/img-3.png" /
-            .feature-content
-              h3 Self management
-              p
-                | Save on your wallet, you are the sole manage 
-        .col-lg-4.col-sm-4.text-center.col-md-4.col-xs-12
-          .feature.mb40
-            img alt="" src="assets/home/img-6.png" /
-            .feature-content
-              h3 customer service
-              p  a response within 24 hours
-  .section-space80.exchange
-    .container
-      .row
-        .col-lg-12.col-md-12.col-sm-12.col-xs-12
-          .section-title.mb60.text-center
-            /! section title start
-            h2 style="color:#83bcfa !important" WE ARE NOT A BANK
-            p.lead We allow you to interact directly with the blockchain while remaining in full control of your keys & your funds
-          /! /.section title start
-  .features5 style="background-color:white;"
-    .container88
-      .row
-        .col-lg-12.col-md-12.col-sm-12.col-xs-12 style="margin-bottom:40px;margin-top:88px" 
-          .section-title.text-center
-            /! section title start
-            h2 style="font-size:40px !important;display: inline;" Create wallets and start trading  
-            a href="/registration1"  style="font-size:37px !important;color:#c1c1c1 !important;display: inline;" NOW
-           
-          /! /.section title start
+     .row
+       .col-lg-offset-2.col-lg-8.col-md-offset-2.col-md-8.col-sm-12.col-xs-12
+         .section-title.mb60.text-center
+           /! section title start
+           p style=("font-size: 50px !important;\n    color: #c1c1c1 !important;\n    display: inline;")  Low price
+           p style=("font-size: 53px !important;\n    display: inline;\n    color: #15549a !important;")  HIGE value
+         /! /.section title start
+     .col-lg-6
+       .section-about-video style=("    width: 100%;\n    ") 
+         .about-img style="width:100%" 
+           img alt="" src="assets/blocksgatelogo (1).png" style=("    \n      margin: auto;\n     width: 350px;\n    height: 323px;\n    display: block;   ") /
+     .col-lg-6
+       h1 Blocksgate coin
+       p.lead style="font-size:18px;line-height:1.6"
+        | Our currency stands as the first pure stable currency which is not dependent on the value of the major currencies of the world such as the dollar, euro, pounds etc. What else can be more simple than having a stable price eradicating frequent market pressures, and putting you at the center of your operations. 
+    .section-space80
+  .container
+    .row
+      div
+        .section-title.mb20
+          /! section title start
+        /! /.section title start
+    .row.section-space80 style="padding-top:0 !important;"   
+      .col-lg-6
+        h1 Invest in Blocksgate
+        p style="font-size:18px;line-height:1.6"
+         | We also offer a groundbreaking form of investment as stocks in the form of Blocksgate plus. This is a token for investors who are set to experience a great opportunity to join and be a part of the movement of the new technology. With blocksgate plus, operations are more transparent than ever before. What else could you have asked for?
+      .col-lg-6
+        .section-about-video style=("    width: 100%;\n    ") 
+          .about-img style="width:100%" 
+            img alt="" src="assets/blocksgateplus.png" style=("    \n      margin: auto;\n    width: 350px;\n    height: 323px;\n    display: block;   ") /    
   #footer
    .container
    .row style="background-color: #c1c1c1;color:white"
      .col-lg-12.col-md-12.col-sm-12.col-xs-12
      
        /! /.section title start 
-        
-    
-             
-             
-           

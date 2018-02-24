@@ -23,9 +23,9 @@ html lang="en"
               span.top-text-left.hidden-xs.homeExchange
                 a href="/markets/ltcbtc"  Exchange
               span.top-text-left.hidden-xs.homeHeaders.coming-soon
-                a href=""  Margin
+                a href=""  
               span.top-text-left.hidden-xs.homeHeaders.coming-soon
-                a href=""  Lending
+                a href=""  
           .col-md-5.col-sm-12.text-right.col-xs-12
           #getstart.row
            - unless current_user
@@ -33,9 +33,9 @@ html lang="en"
               span.top-text.hidden-xs.homeExchange
                 a href="/wallets/registration"   Register
               span.top-text.hidden-xs.homeExchange
-                a href="/auth/login" Sign in 
+                a href="/signin" Sign in 
            - else  
-             .top-nav.top-nav-right style="position:relative;top:-5px;"
+             .top-nav.top-nav-right style=""
               span.top-text.homeHeaders style="padding-left:0;"
                 div style="float:left"
                  #navigation style="z-index:1000;margin-top:3px;padding-left:20px;" 
@@ -43,16 +43,16 @@ html lang="en"
                    ul
                      
                      li.active
-                       a href="/funds" style=("position: relative;top: 3px;padding:0;color: #83bcfa;font-size: 20px;line-height: 1.6;font-weight:100;font-size:16px;position: relative;top: 3px;")  Wallets
+                       a href="/funds" style=("padding:0;color: #83bcfa;font-size: 14px;")  Wallets
                        ul
                          li style="border-bottom:none"
                            a.animsition-link href="/funds" style=("border-bottom:none;text-align:left;background: #15549a;color:#83bcfa") title=("Home page 1")  Shared wallets
                          li
                            a.animsition-link href="/wallets/personal_wallets" style=("border-bottom:none;text-align:left;background: #15549a;color:#83bcfa;font-size:13px;") title=("Home page 1")  Personal wallets demo
               span.top-text.homeHeaders
-                a href="/history/orders" style="font-size:16px"  History
+                a href="/history/orders" style="font-size:14px"  History
               span.top-text.hidden-xs.homeHeaders
-                a href="/tickets" style="font-size:16px"  Tickets
+                a href="/tickets" style="font-size:14px"  Tickets
               span.top-text.hidden-xs.homeHeaders.signout-link
                 a href="/signout"   
     /! /.top-bar
@@ -61,9 +61,11 @@ html lang="en"
         .row
           .col-md-2.col-sm-12.col-xs-6
             /! logo
-            .logo
-              a href="/" 
-                img alt=("logo") src='/assets/blocksgatelogo.png' style="margin-top:9px" /
+            a href="/"
+                .logo style="display:flex"
+                 img alt=("logo") src='/assets/simplelogo.png' style="margin-top: 10px;height: 38px;" / 
+                 h2  style="color:#15549a;width: 50%;margin-top: 10px;margin-left: 8px;font-size:19px" BLOCKS
+                 h2  style="color:#15549a;width: 50%;margin-top: 10px;font-size:19px;font-weight:bold" GATE
           /! logo
           .col-md-9.col-sm-12.col-xs-12
             #navigation
@@ -88,22 +90,8 @@ html lang="en"
                     li
                       a.animsition-link href="/developers" title=("Blog Listing")  Api
                 li
-                  a.animsition-link href="/articles/safewex"  Help
-                  ul
-                    li
-                      a.animsition-link href="/articles/safewex" title=("Blog Listing")  SAFEWEX
-                    li
-                      a.animsition-link href="/articles/protect_yourself" title=("Blog Listing")  How to protect yourself from lost
-                    li
-                      a.animsition-link href="/articles/bitcoin_wallet" title=("Blog Listing")  Bitcoin wallet
-                    li
-                      a.animsition-link href="/articles/hardware_wallets" title=("Blog Listing")  Hardware wallets
-                    li
-                      a.animsition-link href="/" title=("Blog Listing")  Buy bitcoin
-                    li
-                      a.animsition-link href="/" title=("Blog Listing")  Deposit and Withdraw
-                    li
-                      a.animsition-link href="/" title=("Blog Listing") How to trade all currencies
+                  a.animsition-link href=""  Help
+                  
                 
                
             /! /.navigation start

@@ -1672,8 +1672,8 @@ cs:
     application:
       close: Zavřít
     meta:
-      page_title: Safewex - digital Exchange
-      page_description: Safewex - Cryptocurrency Exchange
+      page_title: Blocksgate - digital Exchange
+      page_description: Blocksgate - Cryptocurrency Exchange
       page_keywords: Peatio,Opensource,Exchange,Cryptocurrency
   members:
     edit:

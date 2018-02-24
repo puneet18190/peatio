@@ -114,7 +114,7 @@ class SessionsController < ApplicationController
   def destroy
     clear_all_sessions current_user.id
     reset_session
-    redirect_to root_path
+    redirect_to '/'
   end
 
   private
