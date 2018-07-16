@@ -3,7 +3,7 @@ class PaymentAddress < ActiveRecord::Base
   include Currencible
   belongs_to :account
 
-  #after_commit :gen_address, on: :create
+  after_commit :gen_address, on: :create
 
   has_many :transactions, class_name: 'PaymentTransaction', foreign_key: 'address', primary_key: 'address'
 
